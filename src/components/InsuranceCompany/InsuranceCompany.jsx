@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import TopBankCard from "../cards/topBankCard";
-
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 export default function InsuranceCompany() {
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -23,54 +23,53 @@ export default function InsuranceCompany() {
               Best in Travel Insurance Company
             </h1>
 
-            <div className="flex gap-3 shrink-0">
-              <button
-                onClick={handlePrev}
-                className={`w-10 h-10 flex items-center justify-center rounded-full text-white transition-colors duration-300 ${
-                  activeSlide === 0 ? "bg-[#22C55E]" : "bg-[#1E2A3B]"
-                }`}
-              >
-                <span className="text-[22px] leading-none">‹</span>
-              </button>
+          <div className="flex gap-3 shrink-0">
+  <button
+    onClick={handlePrev}
+    className={`w-10 h-10 flex items-center justify-center rounded-full text-white transition-colors duration-300 ${
+      activeSlide === 0 ? "bg-[#22C55E]" : "bg-[#1E2A3B]"
+    }`}
+  >
+    <FaChevronLeft size={18} />
+  </button>
 
-              <button
-                onClick={handleNext}
-                className={`w-10 h-10 flex items-center justify-center rounded-full text-white transition-colors duration-300 ${
-                  activeSlide === 1 ? "bg-[#22C55E]" : "bg-[#1E2A3B]"
-                }`}
-              >
-                <span className="text-[22px] leading-none">›</span>
-              </button>
-            </div>
+  <button
+    onClick={handleNext}
+    className={`w-10 h-10 flex items-center justify-center rounded-full text-white transition-colors duration-300 ${
+      activeSlide === 1 ? "bg-[#22C55E]" : "bg-[#1E2A3B]"
+    }`}
+  >
+    <FaChevronRight size={18} />
+  </button>
+</div>
           </div>
 
-          <div className="max-w-7xl mx-auto overflow-hidden">
-            <div
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{
-                transform: `translateX(-${activeSlide * 100}%)`,
-              }}
-            >
-              <div className="w-full shrink-0">
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 place-items-center">
-                  <TopBankCard />
-                  <TopBankCard />
-                  <TopBankCard />
-                  <TopBankCard />
-                </div>
-              </div>
+       <div className="max-w-7xl mx-auto overflow-hidden">
+  <div
+    className="flex transition-transform duration-500 ease-in-out"
+    style={{
+      transform: `translateX(-${activeSlide * 100}%)`,
+    }}
+  >
+    <div className="w-full shrink-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-4 xl:gap-6 place-items-center">
+        <TopBankCard />
+        <TopBankCard />
+        <TopBankCard />
+        <TopBankCard />
+      </div>
+    </div>
 
-              <div className="w-full shrink-0">
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 place-items-center">
-                  <TopBankCard />
-                  <TopBankCard />
-                  <TopBankCard />
-                  <TopBankCard />
-                </div>
-              </div>
-            </div>
-          </div>
-
+    <div className="w-full shrink-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-4 xl:gap-6 place-items-center">
+        <TopBankCard />
+        <TopBankCard />
+        <TopBankCard />
+        <TopBankCard />
+      </div>
+    </div>
+  </div>
+</div>
           <h1 className="font-semibold text-[28px] sm:text-[38px] text-center mt-12 sm:mt-20 mb-8 sm:mb-12">
             Top Verified Banks
           </h1>

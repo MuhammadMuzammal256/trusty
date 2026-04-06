@@ -6,25 +6,25 @@ export default function Section3() {
       name: "Tech Wizards",
       website: "techwizards.com",
       user: "Courtney Henry",
-      avatar: "/images/section3user1.svg",
+      avatar: "/images/top-img.svg",
     },
     {
       name: "Tech Wizards",
       website: "techwizards.com",
       user: "Arlene McCoy",
-      avatar: "/images/section3user2.svg",
+      avatar: "/images/top-img.svg",
     },
     {
       name: "Tech Wizards",
       website: "techwizards.com",
       user: "Ralph Edwards",
-      avatar: "/images/section3user3.svg",
+      avatar: "/images/top-img.svg",
     },
     {
       name: "Tech Wizards",
       website: "techwizards.com",
       user: "Brooklyn Simmons",
-      avatar: "/images/section3user4.svg",
+      avatar: "/images/top-img.svg",
     },
   ];
 
@@ -110,7 +110,7 @@ export default function Section3() {
                           <span className="truncate text-[12px] text-[#8A8F98]">
                             Top Contributor
                           </span>
-                          <span className="text-[10px] text-[#F59E0B]">🟠</span>
+                          <span><img src="/images/paid-star.svg" alt="" /></span>
                         </div>
                       </div>
                     </div>
@@ -131,12 +131,11 @@ export default function Section3() {
             <div className="inline-flex gap-5 py-2">
               {[...reviews, ...reviews].map((item, index) => (
                 // SAME CARD AGAIN (no change)
-                <div
+                 <div
                   key={index}
                   className="w-[376px] shrink-0 overflow-hidden rounded-[20px] border border-[#E5E7EB] bg-[#EFF3F7] px-4 py-4 align-top shadow-none"
                 >
-                  {/* SAME CONTENT */}
-                  {/* (copy paste same card — unchanged) */}
+                  {/* Top */}
                   <div className="mb-4 flex items-start gap-3">
                     <div className="relative h-[54px] w-[54px] shrink-0 rounded-[10px] border border-[#D1D5DB] bg-[#F8F8F8]">
                       <span className="absolute right-[-2px] top-[-2px] h-[10px] w-[10px] rounded-full border border-[#16A34A] bg-[#22C55E]"></span>
@@ -152,6 +151,7 @@ export default function Section3() {
                     </div>
                   </div>
 
+                  {/* Rating */}
                   <div className="mb-3 flex items-center gap-2">
                     <div className="flex items-center gap-[2px]">
                       {[...Array(5)].map((_, i) => (
@@ -167,17 +167,21 @@ export default function Section3() {
                     <span className="text-[12px] text-[#4B5563]">5.0</span>
                   </div>
 
-                  <p className="mb-3 w-full break-words text-[13px] leading-[1.6] text-[#3F3F46]">
-                    Had a great experience with Tech Wizards when my laptop
-                    crashed...
-                  </p>
+                  {/* Review */}
+            <p className="mb-3 w-full text-[13px] leading-[1.6] text-[#3F3F46] break-words whitespace-normal overflow-hidden">
+  Had a great experience with Tech Wizards when my laptop
+  crashed. They were able to recover all my files and had my
+  computer running like new again...
+</p>
 
+                  {/* Link */}
                   <button className="mb-4 text-[13px] font-semibold text-[#00B67A]">
                     Read Review →
                   </button>
 
                   <div className="mb-4 h-px w-full bg-[#E5E7EB]" />
 
+                  {/* Bottom */}
                   <div className="flex items-center justify-between gap-3">
                     <div className="flex min-w-0 items-center gap-3">
                       <div className="h-[42px] w-[42px] shrink-0 overflow-hidden rounded-full bg-[#D1D5DB]">
@@ -192,10 +196,18 @@ export default function Section3() {
                         <p className="truncate text-[13px] font-semibold text-[#2C2F36]">
                           {item.user}
                         </p>
+                        <div className="mt-[6px] flex items-center gap-1">
+                          <span className="truncate text-[12px] text-[#8A8F98]">
+                            Top Contributor
+                          </span>
+                          <span>
+                            <img src="/images/paid-star.svg" alt="" />
+                          </span>
+                        </div>
                       </div>
                     </div>
 
-                    <span className="text-[11px] text-[#A1A1AA]">
+                    <span className="shrink-0 text-[11px] text-[#A1A1AA]">
                       15 mins ago
                     </span>
                   </div>
