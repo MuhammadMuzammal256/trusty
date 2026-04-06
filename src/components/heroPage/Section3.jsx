@@ -1,5 +1,7 @@
 "use client";
 
+import Marquee from "react-fast-marquee";
+
 export default function Section3() {
   const reviews = [
     {
@@ -37,7 +39,7 @@ export default function Section3() {
 
         {/* ROW 1 (Right ➝ Left) */}
         <div className="w-full overflow-hidden">
-          <marquee behavior="scroll" direction="left" scrollamount="5">
+          <Marquee direction="left" speed={20}>
             <div className="inline-flex gap-5 py-2">
               {[...reviews, ...reviews].map((item, index) => (
           
@@ -122,12 +124,12 @@ export default function Section3() {
                 </div>
               ))}
             </div>
-          </marquee>
+          </Marquee>
         </div>
 
         {/* ROW 2 (Left ➝ Right) */}
         <div className="w-full overflow-hidden mt-6">
-          <marquee behavior="scroll" direction="right" scrollamount="5">
+          <Marquee direction="right" speed={20}>
             <div className="inline-flex gap-5 py-2">
               {[...reviews, ...reviews].map((item, index) => (
                 // SAME CARD AGAIN (no change)
@@ -214,7 +216,7 @@ export default function Section3() {
                 </div>
               ))}
             </div>
-          </marquee>
+          </Marquee>
         </div>
       </div>
     </section>

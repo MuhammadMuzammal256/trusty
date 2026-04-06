@@ -3,6 +3,7 @@
 import { useState } from "react";
 import TopBankCard from "../cards/topBankCard";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Marquee from "react-fast-marquee";
 export default function InsuranceCompany() {
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -74,10 +75,9 @@ export default function InsuranceCompany() {
             Top Verified Banks
           </h1>
 
-  <marquee
-  behavior="scroll"
+  <Marquee
   direction="left"
-  scrollamount="10"
+  speed={50}
   className="pb-[160px] md:pb-[180px]"
 >
   <div className="flex gap-6">
@@ -93,7 +93,7 @@ export default function InsuranceCompany() {
     ))}
 
   </div>
-</marquee>
+</Marquee>
         </div>
       </div>
 

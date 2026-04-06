@@ -3,7 +3,7 @@
 
 body {
   background: var(--background);
-  text: [#17253F] !important;
+  color: #17253F !important;
   font-family: var(--font-poppins),
    /* font-family: var(--font-poppins), Helvetica, sans-serif; */
 }

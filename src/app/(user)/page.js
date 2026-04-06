@@ -1,12 +1,6 @@
 import NavBar from "@/components/NavBar";
-import LookingCard from "@/components/cards/lookingCard";
-import ReviewCard from "@/components/cards/reviewCard";
-import TopBankCard from "@/components/cards/topBankCard";
-import TopPicksCard from "@/components/cards/topPicksCard";
-import TextField from "@/components/textField/textField";
 import HeroPage from "./heropage/page";
 import Image from "next/image";
-import Marquee from "react-fast-marquee";
 
 import TopPickForYou from "@/components/heroPage/topPickForYou";
 import InsuranceCompany from "@/components/InsuranceCompany/InsuranceCompany";
