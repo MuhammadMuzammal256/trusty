@@ -1,6 +1,6 @@
 import Image from "next/image";
 const aboutImages = {
-  founder: "/Images/men.svg",
+  founder: "/images/men.svg",
 };
 
 export default function AboutSection() {
