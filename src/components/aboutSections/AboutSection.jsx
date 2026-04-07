@@ -13,7 +13,7 @@ export default function AboutSection() {
               Homepage <span className="mx-1">{">"}</span>{" "}
               <span className="text-[#17253F] font-light">About Us</span>
             </p>
-          <h1 className="mx-auto mt-3 max-w-190   font-'Poppins' font-semibold  lg:text-[49px] lg:leading-17.5  md:leading-17.5 text-center  tracking-[-0.02em] text-[#22304a] md:text-[42px] text-[22px]">
+          <h1 className="sm:mx-auto mx-10  mt-3 max-w-190   font-'Poppins' font-semibold  lg:text-[49px] lg:leading-17.5  md:leading-17.5 text-center  tracking-[-0.02em] text-[#22304a] md:text-[42px] text-[22px]">
             Trusty Feedback connects people with great local businesses.
           </h1>
 
