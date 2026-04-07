@@ -15,7 +15,7 @@ export default function MarqueTag() {
   return (
     <div className="w-full">
       
-      {/* Header */}
+ 
       <div className="max-w-7xl mx-auto 
         px-4 sm:px-6 md:px-8 lg:px-10
         flex items-start justify-between flex-wrap gap-4
@@ -53,7 +53,7 @@ export default function MarqueTag() {
         </button>
       </div>
 
-      {/* Marquee */}
+  ]
       <Marquee
         className="py-3 sm:py-4 "
         speed={40}
@@ -74,7 +74,7 @@ export default function MarqueTag() {
         </div>
       </Marquee>
 
-      {/* Bottom line */}
+]
       <div className="max-w-7xl mx-auto px-4 mt-10 sm:mt-14 md:mt-20 border-b border-black opacity-5 w-full"></div>
     </div>
   );
