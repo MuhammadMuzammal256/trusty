@@ -2,7 +2,7 @@
 
 export default function TopPicksCard() {
   return (
-    <div className=" w-[280px] bg-[#EFF3F7] rounded-2xl p-4">
+<div className="w-full md:w-[280px] bg-[#EFF3F7] rounded-2xl p-4">
       
 
       <div className="bg-white h-[100px] flex items-center justify-center gap-3 rounded-xl border border-gray-200">

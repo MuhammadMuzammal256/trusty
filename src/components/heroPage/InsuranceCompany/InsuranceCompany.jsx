@@ -78,7 +78,7 @@ export default function InsuranceCompany() {
   <Marquee
   direction="left"
   speed={50}
-  className="pb-[160px] md:pb-[180px]"
+  className="pb-[160px] sm:mb-0 md:mb-10 lg:mb-0 md:pb-[180px]"
 >
   <div className="flex gap-6">
     
