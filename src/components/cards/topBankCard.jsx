@@ -2,16 +2,13 @@
 
 export default function TopBankCard() {
   return (
-    <div className="w-[280px] bg-white rounded-2xl p-4">
-      
-
-      <div className=" h-[100px] bg-[#EFF3F7] flex items-center justify-center gap-3 rounded-xl border border-gray-200">
+    <div className="w-full max-w-[280px] min-w-0 bg-white rounded-2xl p-4">
+      <div className="h-[100px] bg-[#EFF3F7] flex items-center justify-center gap-3 rounded-xl border border-gray-200">
         <img src="/images/bank.svg" alt="logo" className="h-10 w-10" />
         <h1 className="font-bold text-2xl text-[#17253F]">
           Cloudly
         </h1>
       </div>
-
 
       <div className="mt-4">
         <h2 className="flex items-center gap-2 font-semibold text-lg text-[#17253F]">
@@ -23,7 +20,6 @@ export default function TopBankCard() {
           www.businesstoolkit.com
         </p>
 
-    
         <div className="flex items-center gap-2 mt-3">
           <img
             className="h-4"
@@ -34,7 +30,6 @@ export default function TopBankCard() {
           <span className="text-sm text-gray-400">(7891)</span>
         </div>
 
-       
         <div className="flex items-center gap-2 mt-4 cursor-pointer">
           <span className="font-semibold text-[#17253F]">
             View Details

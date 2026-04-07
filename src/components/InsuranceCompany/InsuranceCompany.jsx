@@ -100,30 +100,30 @@ export default function InsuranceCompany() {
       <div className="absolute left-1/2 bottom-[100px] w-[92%] sm:w-[90%] max-w-6xl -translate-x-1/2">
         <div className="bg-[#0B4F3A] rounded-[25px] px-5 py-8 sm:px-8 sm:py-10 md:px-12 lg:px-16 lg:py-12 flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden">
           <div className="text-white w-full md:w-1/2">
-            <h2 className="text-[30px] sm:text-[34px] md:text-[40px] font-semibold leading-tight mb-4 text-center md:text-left max-w-[520px]">
+            <h2 className="text-[30px] sm:text-[34px] md:text-[40px] text-white font-semibold leading-tight mb-4 text-center md:text-left max-w-[520px]">
               We Provide Trusty Feedback You Can Rely On
             </h2>
 
-            <p className="text-gray-200 mb-6 text-sm sm:text-base text-center md:text-left max-w-[520px]">
+            <p className="text-white font-light mb-6 text-sm sm:text-base text-center md:text-left max-w-[520px]">
               We’re a review platform accessible to all. Our vision is to become
               a global symbol of trust, empowering consumers to shop confidently
               while helping businesses grow and improve.
             </p>
 
             <div className="flex justify-center md:justify-start">
-              <button className="bg-[#22C55E] text-black px-6 py-3 rounded-full font-medium">
+              <button className="bg-[#04DA8D] text-[#17253F] px-6 py-3 rounded-full font-medium">
                 More About Us
               </button>
             </div>
           </div>
 
           <div className="relative w-full md:w-1/2 flex justify-center md:justify-end min-h-[260px] sm:min-h-[300px] md:min-h-[340px]">
-            <div className="absolute bottom-0 right-1/2 translate-x-1/2 md:right-[10px] md:translate-x-0 h-[220px] w-[220px] sm:h-[270px] sm:w-[270px] lg:h-[320px] lg:w-[320px] rounded-full bg-[#0F7A56] z-0" />
+            <div className="absolute top-20 bottom-0 right-1/2 translate-x-1/2 md:right-[10px] md:translate-x-0 h-[220px] w-[220px] sm:h-[270px] sm:w-[270px] lg:h-[320px] lg:w-[320px] rounded-full bg-[#0F7A56] z-0" />
 
             <img
               src="/images/gq.svg"
               alt=""
-              className="absolute bottom-0 right-1/2 translate-x-1/2 md:right-0 md:translate-x-0 z-10 w-[220px] sm:w-[260px] md:w-[320px] lg:w-[380px] object-contain"
+              className="absolute bottom-0 right-1/2 translate-x-1/2 md:right-0 md:translate-x-0 z-10 w-[320px] sm:w-[390px] md:w-[390px] lg:w-[390px] top-20 object-contain"
             />
           </div>
         </div>
