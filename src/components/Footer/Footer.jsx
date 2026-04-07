@@ -60,7 +60,25 @@ export default function Footer() {
               <h3 className="text-[18px] font-bold text-[#162544]">
                 Follow Us:
               </h3>
+<div className="mt-3 flex items-center gap-2.5">
 
+  <a href="#">
+    <img src="/images/fb.svg" alt="icon" className="h-[47px] w-[47px]" />
+  </a>
+
+  <a href="#">
+    <img src="/images/x.svg" alt="icon" className="h-[47px] w-[47px]" />
+  </a>
+
+  <a href="#">
+    <img src="/images/insta.svg" alt="icon" className="h-[47px] w-[47px]" />
+  </a>
+
+  <a href="#">
+    <img src="/images/ln.svg" alt="icon" className="h-[47px] w-[47px]" />
+  </a>
+
+</div>
             </div>
           </div>
 

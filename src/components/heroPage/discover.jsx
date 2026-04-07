@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TextField from "../textField/textField";
+import TextField from "../cards/textField/textField";
 export default function Discover() {
   return (
     <section className="w-full bg-white py-20">

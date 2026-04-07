@@ -21,8 +21,6 @@ export default function CardSlider() {
 
   return (
     <div className="w-full py-10">
-      
-      {/* Cards Container */}
       <div
         ref={scrollRef}
         onScroll={handleScroll}
@@ -33,20 +31,17 @@ export default function CardSlider() {
             key={i}
             className="min-w-[300px] md:min-w-[320px] bg-gray-100 rounded-2xl p-5 flex-shrink-0"
           >
-            {/* Top Tag */}
             <div className="bg-white rounded-xl px-4 py-3 flex items-center gap-3 shadow-sm">
               <div className="w-10 h-10 bg-green-400 rounded-full"></div>
               <span className="font-semibold text-lg">{card.tag}</span>
             </div>
 
-            {/* Content */}
             <div className="mt-5">
               <h3 className="font-bold text-lg">{card.title}</h3>
               <p className="text-gray-500 text-sm mt-1">
                 www.businesstoolkit.com
               </p>
 
-              {/* Rating */}
               <div className="flex items-center gap-2 mt-3">
                 <div className="flex text-green-500">
                   {"★★★★★"}
@@ -56,7 +51,6 @@ export default function CardSlider() {
                 </span>
               </div>
 
-              {/* Link */}
               <p className="mt-4 font-medium text-gray-700 cursor-pointer">
                 View Details →
               </p>
@@ -65,7 +59,6 @@ export default function CardSlider() {
         ))}
       </div>
 
-      {/* Dots */}
       <div className="flex justify-center mt-6 gap-2">
         {cards.map((_, i) => (
           <div

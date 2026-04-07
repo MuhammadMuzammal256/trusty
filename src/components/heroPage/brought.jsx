@@ -1,4 +1,4 @@
-import TextField from "../textField/textField";
+import TextField from "../cards/textField/textField";
 
 export default function Brought() {
   return (
