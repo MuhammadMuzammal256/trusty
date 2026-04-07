@@ -52,29 +52,27 @@ export default function MarqueTag() {
           <span className="ml-2">→</span>
         </button>
       </div>
-
-  ]
-      <Marquee
-        className="py-3 sm:py-4 "
-        speed={40}
-        pauseOnHover={true}
-        gradient={false}
-      >
-        <div className="flex gap-3 sm:gap-4 md:gap-5">
-          {cards.map((ele, index) => {
-            return (
-              <LookingCard
-                key={index}
-                imageSrc={ele.imageSrc}
-                altText={ele.altText}
-                title={ele.title}
-              />
-            );
-          })}
-        </div>
-      </Marquee>
-
-]
+<div className="w-full overflow-hidden">
+  <Marquee
+    className="py-3 sm:py-4"
+    speed={40}
+    pauseOnHover={true}
+    gradient={false}
+  >
+    <div className="flex items-center gap-3 sm:gap-4 md:gap-5 px-3 sm:px-4 md:px-5">
+      {cards.map((ele, index) => {
+        return (
+          <LookingCard
+            key={index}
+            imageSrc={ele.imageSrc}
+            altText={ele.altText}
+            title={ele.title}
+          />
+        );
+      })}
+    </div>
+  </Marquee>
+</div>
       <div className="max-w-7xl mx-auto px-4 mt-10 sm:mt-14 md:mt-20 border-b border-black opacity-5 w-full"></div>
     </div>
   );
