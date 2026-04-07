@@ -3,7 +3,7 @@ import HeroPage from "./heropage/page";
 
 
 import TopPickForYou from "@/components/heroPage/topPickForYou";
-import InsuranceCompany from "@/components/InsuranceCompany/InsuranceCompany";
+import InsuranceCompany from "@/components/heroPage/InsuranceCompany/InsuranceCompany";
 import Footer from "@/components/Footer/Footer";
 
 import OwnBusiness from "@/components/heroPage/ownBusiness";
@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <>
-      <NavBar />
+
       <HeroPage />
       <TopPickForYou />
       <InsuranceCompany />
@@ -26,7 +26,7 @@ export default function Home() {
     <OwnBusiness />
    <Discover />
 
-    <Footer/>
+
     </>
   );
 }

@@ -8,25 +8,27 @@ export default function NavBar() {
   const [active, setActive] = useState("business");
     const [menuOpen, setMenuOpen] = useState(false);
 
-  const navItems = [
-    { name: "Write a review", href: "#" },
-    { name: "How it Works", href: "#" },
-    { name: "About Us", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Login", href: "#" },
-  ];
+const navItems = [
+  { name: "Write a review", href: "#" },
+  { name: "How it Works", href: "#" },
+  { name: "About Us", href: "/about" },
+  { name: "Blog", href: "/blog" },
+  { name: "Login", href: "#" },
+];
 
   return (
     <div className=" h-[105px] border-b border-[#17253F26] bg-[url('/images/Hero-bg.svg')] bg-cover bg-start ">
       <div className="max-w-7xl px-10 mx-auto flex items-center justify-between h-full">
         
-       <Image
-  src="/images/Logo.svg"
-  alt="trusty logo"
-  width={168}
-  height={51}
-  className="w-[168px] h-auto md:w-[140px] lg:w-[168px]"
-/>
+        <Link href="/">
+          <Image
+            src="/images/Logo.svg"
+            alt="trusty logo"
+            width={168}
+            height={51}
+            className="w-[168px] h-auto md:w-[140px] lg:w-[168px]"
+          />
+        </Link>
 
         <div className="flex items-center gap-6 ">
           <nav className="flex items-center gap-6 hidden  lg:flex text-[#17253F] font-normal text-[15px] leading-none tracking-normal font-poppins">

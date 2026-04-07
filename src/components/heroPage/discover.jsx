@@ -16,7 +16,7 @@ export default function Discover() {
         </p>
 
      
-        <div className="relative   w-19">
+        <div className="relative hidden md:block  w-19">
           <Image
             src="/images/downRings.svg"
             alt="hero"

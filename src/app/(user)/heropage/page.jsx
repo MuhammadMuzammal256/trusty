@@ -1,13 +1,13 @@
 import LookingCard from "@/components/cards/lookingCard";
 import ReviewCard from "@/components/cards/reviewCard";
 import MarqueTag from "@/components/heroPage/marqueTag";
-import InsuranceCompany from "@/components/InsuranceCompany/InsuranceCompany";
+import InsuranceCompany from "@/components/heroPage/InsuranceCompany/InsuranceCompany";
 import TextField from "@/components/cards/textField/textField";
 
 export default function FHeroPage() {
   return (
     <div className="bg-[url('/images/Hero-bg.svg')] bg-cover bg-start">
-      <div className="px-13.25 py-18.5 mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between h-full">
+      <div className="px-13.25 py-18.5 mx-auto max-w-8xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between h-full">
         <div className="mr-4 p-0 hidden lg:block ">
           <img
             src="/images/ring-left.svg"

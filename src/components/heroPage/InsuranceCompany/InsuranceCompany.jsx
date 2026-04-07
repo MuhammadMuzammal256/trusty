@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import TopBankCard from "../cards/topBankCard";
+import TopBankCard from "../../cards/topBankCard";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 export default function InsuranceCompany() {
@@ -97,7 +97,7 @@ export default function InsuranceCompany() {
         </div>
       </div>
 
-      <div className="absolute left-1/2 bottom-[100px] w-[92%] sm:w-[90%] max-w-6xl -translate-x-1/2">
+      <div className="absolute left-1/2 bottom-[100px] w-[92%] sm:w-[90%] max-w-7xl px-10 -translate-x-1/2">
         <div className="bg-[#0B4F3A] rounded-[25px] px-5 py-8 sm:px-8 sm:py-10 md:px-12 lg:px-16 lg:py-12 flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden">
           <div className="text-white w-full md:w-1/2">
             <h2 className="text-[30px] sm:text-[34px] md:text-[40px] text-white font-semibold leading-tight mb-4 text-center md:text-left max-w-[520px]">
