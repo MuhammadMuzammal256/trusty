@@ -10,7 +10,7 @@ export default function Discover() {
         </h2>
 
     
-        <p className="mt-4 max-w-[540px] text-[16px] leading-[30px] text-[#6B7280]">
+        <p className="mt-4 max-w-[540px] text-[14px] fontn-light leading-[10px] text-[#17253F]">
           Recently made a purchase? Share your experience to help
           others &amp; provide feedback to businesses!
         </p>

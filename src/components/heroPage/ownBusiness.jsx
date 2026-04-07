@@ -13,13 +13,13 @@ export default function OwnBusiness() {
            Gain Genuine Reviews!
             </h2>
 
-            <p className="mb-8 max-w-[460px] text-[15px] leading-[1.6] text-[#D7DFEC]">
+            <p className="mb-8 max-w-[460px] text-[15px] leading-[1.6] text-white">
               Register with us to build trust through authentic reviews.
               Showcase your services, engage with your audience, and grow your
               reputation with real feedback.
             </p>
 
-            <button className="rounded-full bg-[#12D98E] px-8 py-4 text-[16px] font-semibold leading-none text-[#0B2340] transition hover:opacity-95">
+            <button className="rounded-full bg-[#04DA8D] px-8 py-4 text-[16px] font-semibold leading-none text-[#17253F] transition hover:opacity-95">
               Get Started
             </button>
           </div>
