@@ -17,7 +17,7 @@ const navItems = [
 ];
 
   return (
-    <div className=" h-[105px] border-b border-[#17253F26] bg-[url('/images/Hero-bg.svg')] bg-cover bg-start ">
+    <div className="relative z-50 h-[105px] border-b border-[#17253F26] bg-[url('/images/Hero-bg.svg')] bg-cover bg-start ">
       <div className="max-w-7xl px-10 mx-auto flex items-center justify-between h-full">
         
         <Link href="/">
@@ -100,21 +100,17 @@ const navItems = [
     </button>
   </div>
 )}
-        {menuOpen && (
-        <div className="lg:hidden bg-[url('/images/Hero-bg.svg')] bg-cover bg-start   ">
-          {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="text-[#17253F] font-medium border-b border-[#17253F26] w-full flex flex-col justify-center items-center md:items-start p-2 px-4 w-full gap-4">
-              {item.name}
-            </Link>
-         
-            ))
-          
-            }
-            
+          {menuOpen && (
+        <div className="lg:hidden w-full bg-white z-50 relative">
+          <div className="max-w-7xl mx-auto px-10">
+            {navItems.map((item) => (
+              <Link key={item.name} href={item.href} className="text-[#17253F] font-medium border-b border-[#17253F26] w-full flex flex-col justify-center items-center md:items-start p-2 px-4 gap-4">
+                {item.name}
+              </Link>
+            ))}
           </div>
-          
-          )}
- 
+        </div>
+      )}
           
     </div>
     
