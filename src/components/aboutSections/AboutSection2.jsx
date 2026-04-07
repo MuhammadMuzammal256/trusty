@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 const teamImages = {
-  team1: "/Images/m1.svg",
-  team2: "/Images/m2.svg",
-  team3: "/Images/m3.svg",
-  team4: "/Images/m3.svg",
-  connectHero: "/Images/both.svg",
+  team1: "/images/m1.svg",
+  team2: "/images/m2.svg",
+  team3: "/images/m3.svg",
+  team4: "/images/m3.svg",
+  connectHero: "/images/both.svg",
 };
 
 export default function AboutSection2() {

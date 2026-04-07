@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const testimonialAvatars = {
 
-  elizabeth: "/Images/top-img.svg",
-  hayley: "/Images/top-img.svg",
+  elizabeth: "/images/top-img.svg",
+  hayley: "/images/top-img.svg",
 };
 
 export default function AboutSection3() {
