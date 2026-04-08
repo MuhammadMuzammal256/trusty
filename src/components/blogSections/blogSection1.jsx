@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function BolgSection1() {
   const sideBlogs = [
@@ -126,9 +127,9 @@ export default function BolgSection1() {
                       {item.desc}
                     </p>
 
-                    <button className="text-[#17253F] mb-5 md:mb-0 font-semibold text-[16px] leading-[1.2] flex items-center gap-2">
-                      Read Article <span>→</span>
-                    </button>
+                  <Link href="/blog/blog-details" className="text-[#17253F] mb-5 md:mb-0 font-semibold text-[16px] leading-[1.2] flex items-center gap-2">
+                    Read Article <span>→</span>
+                  </Link>
                   </div>
                 </div>
               ))}
