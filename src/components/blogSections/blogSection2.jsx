@@ -115,11 +115,15 @@ export default function BlogSection2() {
                   </p>
                 </div>
 
-                <div className="w-[132px] h-[33px] px-[18px] gap-[6px] rounded-[56px] border border-[#C3C8D0] bg-[#F7F7F7] flex items-center justify-center">
-                  <p className="text-[#2D2D2D] text-[14px] leading-[100%] font-normal">
-                    {card.date}
-                  </p>
-                </div>
+                           <div className="w-[132px] h-[33px]  rounded-[56px] border border-[#C3C8D0] bg-[#F7F7F7] flex items-center justify-center gap-[6px]">
+  
+  <img src="/images/calender.svg" alt="calendar"  />
+
+  <p className="text-[#252525] text-[14px] leading-[100%] font-normal">
+    {card.date}
+  </p>
+
+</div>
               </div>
 
    
