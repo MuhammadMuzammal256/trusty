@@ -24,27 +24,26 @@ export default function WriteReviewSection1() {
   <div className=" mx-auto grid grid-cols-1 md:grid-cols-[1fr_1.03fr] rounded-[28px] overflow-hidden">
     
 
-  <div className=" bg-[#005732] min-h-[720px] px-[28px] pt-20 pb-0 flex flex-col items-center overflow-hidden">
+<div className="bg-[#005732] sm:min-h-[720px] px-[28px] pt-20 pb-0 flex flex-col items-center overflow-hidden">
   
- <p className="text-white text-[16px]  font-normal mb-4 text-center ">
-  Can't Wait to Read Your Thoughts!
-</p>
+  <p className="text-white text-[16px] font-normal mb-4 text-center">
+    Can't Wait to Read Your Thoughts!
+  </p>
 
   <h2 className="text-white text-center mb-10 font-bold leading-[40px] text-[28px] max-w-[470px] z-10 tracking-normal">
-  Select a Company & Contribute Your Feedback Today!
-</h2>
+    Select a Company & Contribute Your Feedback Today!
+  </h2>
 
-
-  <div className=" flex flex-col justify-center items-end">
+  {/* FIXED PART */}
+  <div className="w-full flex justify-center md:justify-end">
     <img
       src="/images/writeR.svg"
       alt="person"
-      className=" h-[550px] object-contain"
+      className=" sm:h-[450px] md:h-[550px] object-contain"
     />
   </div>
 
 </div>
-
 
     <div className="bg-[#EFF3F7] min-h-[720px] px-[28px] md:px-5 lg:px-[28px] xl:px-[34px] pt-20 pb-[34px] ">
       <div className="mb-[20px]">
