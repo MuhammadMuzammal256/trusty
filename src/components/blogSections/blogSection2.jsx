@@ -123,17 +123,15 @@ export default function BlogSection2() {
               </div>
 
    
-              <h3 className="text-[#252525] font-semibold text-[18px] leading-[26px] mt-5">
+             <h3 className="text-[#252525] font-semibold text-[18px] leading-[26px] mt-3">
                 {card.title}
               </h3>
 
-
-              <p className="text-[#4B4B4B] font-normal text-[16px] leading-[24px] mt-3">
+              <p className="text-[#252525CC]  font-normal text-[16px] leading-[24px] mt-1 ">
                 {card.description}
               </p>
 
-
-              <button className="mt-0 inline-flex items-center gap-2 group hover:cursor-pointer">
+              <button className="mt-1 inline-flex  items-center gap-2 group hover:cursor-pointer">
                 <span className="text-[#04DA8D] font-semibold text-[16px] leading-[30px]">
                   Read Article
                 </span>

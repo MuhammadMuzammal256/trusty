@@ -137,7 +137,7 @@ export default function BlogSection3() {
             <div
               key={card.id}
               data-card
-              className="shrink-0 w-full md:max-w-[400px] lg:w-[377px] lg:h-[400px] border border-[#C3C8D0] rounded-[25px] bg-[#E9ECEF] p-4 sm:p-5"
+              className="shrink-0 w-full md:max-w-[400px] lg:w-[377px] lg:h-[400px] border border-[#C3C8D0] rounded-[25px] bg-white p-4 sm:p-5"
             >
               <div className="relative w-full h-[220px] sm:h-[260px] md:h-[300px] lg:h-[180px] rounded-[20px] overflow-hidden">
                 <Image
@@ -150,27 +150,31 @@ export default function BlogSection3() {
 
               <div className="flex flex-wrap items-center gap-3 mt-5">
                 <div className="w-[142px] h-[33px] px-[18px] gap-[6px] rounded-[56px] border border-[#C3C8D0] bg-[#FFFFFF] flex items-center justify-center">
-                  <p className="text-[#2D2D2D] text-[14px] leading-[100%] font-normal">
+                  <p className="text-[#252525] text-[14px] leading-[100%] font-normal">
                     {card.category}
                   </p>
                 </div>
 
-                <div className="w-[132px] h-[33px] px-[18px] gap-[6px] rounded-[56px] border border-[#C3C8D0] bg-[#F7F7F7] flex items-center justify-center">
-                  <p className="text-[#2D2D2D] text-[14px] leading-[100%] font-normal">
-                    {card.date}
-                  </p>
-                </div>
+             <div className="w-[132px] h-[33px]  rounded-[56px] border border-[#C3C8D0] bg-[#F7F7F7] flex items-center justify-center gap-[6px]">
+  
+  <img src="/images/calender.svg" alt="calendar"  />
+
+  <p className="text-[#252525] text-[14px] leading-[100%] font-normal">
+    {card.date}
+  </p>
+
+</div>
               </div>
 
-              <h3 className="text-[#252525] font-semibold text-[18px] leading-[26px] mt-5">
+              <h3 className="text-[#252525] font-semibold text-[18px] leading-[26px] mt-3">
                 {card.title}
               </h3>
 
-              <p className="text-[#4B4B4B] font-normal text-[16px] leading-[24px] mt-3">
+              <p className="text-[#252525CC]  font-normal text-[16px] leading-[24px] mt-1 ">
                 {card.description}
               </p>
 
-              <button className="mt-0 inline-flex items-center gap-2 group hover:cursor-pointer">
+              <button className="mt-1 inline-flex  items-center gap-2 group hover:cursor-pointer">
                 <span className="text-[#04DA8D] font-semibold text-[16px] leading-[30px]">
                   Read Article
                 </span>
