@@ -35,15 +35,9 @@ export default function Footer({ className = "" }) {
   return (
     <footer className="mx-10 bg-white py-4 md:py-0">
       
-      {/* Green Container */}
       <div className={`rounded-[25px] bg-[#9BDFC4] ${className}`}>
-        
-        {/* Centered Content */}
         <div className="mx-auto max-w-7xl px-10 py-10 md:py-9">
-          
           <div className="grid grid-cols-1 gap-y-8 md:grid-cols-2 lg:grid-cols-[1.2fr_0.9fr_0.9fr_0.9fr_0.9fr] lg:gap-x-10">
-            
-            {/* LEFT SECTION */}
             <div>
               <Image
                 src="/images/Logo.svg"
@@ -80,7 +74,6 @@ export default function Footer({ className = "" }) {
               </div>
             </div>
 
-            {/* QUICK LINKS */}
             <div>
               <h3 className="text-[20px] font-semibold text-[#162544]">
                 Quick Links
@@ -99,7 +92,6 @@ export default function Footer({ className = "" }) {
               </ul>
             </div>
 
-            {/* COMMUNITY */}
             <div>
               <h3 className="text-[20px] font-semibold text-[#162544]">
                 Community
@@ -118,7 +110,6 @@ export default function Footer({ className = "" }) {
               </ul>
             </div>
 
-            {/* BUSINESSES */}
             <div>
               <h3 className="text-[20px] font-semibold text-[#162544]">
                 Businesses
@@ -137,7 +128,6 @@ export default function Footer({ className = "" }) {
               </ul>
             </div>
 
-            {/* OTHER LINKS */}
             <div>
               <h3 className="text-[20px] font-semibold text-[#162544]">
                 Other Links
@@ -157,7 +147,6 @@ export default function Footer({ className = "" }) {
             </div>
           </div>
 
-          {/* BOTTOM */}
           <div className="mt-8 border-t border-[#85D0B3] pt-5 text-center">
             <p className="text-[16px] text-[#162544]">
               © Copyright 2024 All Right Reserved by Trusty Feedback

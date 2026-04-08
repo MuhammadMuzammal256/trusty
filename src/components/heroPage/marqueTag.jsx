@@ -58,7 +58,7 @@ export default function MarqueTag() {
             {cards.map((ele, index) => {
               return (
                 <div
-                  key={index} // ✅ FIX: key moved here
+                  key={index}
                   className="scale-90 sm:scale-100"
                 >
                   <LookingCard

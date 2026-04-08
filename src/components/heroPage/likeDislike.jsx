@@ -77,8 +77,7 @@ export default function LikeDislike() {
                     <span className="text-[12px] text-[#4B5563]">5.0</span>
                   </div>
 
-                  {/* Review */}
-            <p className="mb-3 w-full text-[13px] leading-[1.6] text-[#2A2A2A] break-words whitespace-normal overflow-hidden">
+                <p className="mb-3 w-full text-[13px] leading-[1.6] text-[#2A2A2A] break-words whitespace-normal overflow-hidden">
   Had a great experience with Tech Wizards when my laptop
   crashed. They were able to recover all my files and had my
   computer running like new again...
@@ -167,21 +166,18 @@ export default function LikeDislike() {
                     <span className="text-[12px] text-[#4B5563]">5.0</span>
                   </div>
 
-                  {/* Review */}
-            <p className="mb-3 w-full text-[13px] leading-[1.6] text-[#2A2A2A] break-words whitespace-normal overflow-hidden">
+                <p className="mb-3 w-full text-[13px] leading-[1.6] text-[#2A2A2A] break-words whitespace-normal overflow-hidden">
   Had a great experience with Tech Wizards when my laptop
   crashed. They were able to recover all my files and had my
   computer running like new again...
 </p>
 
-                  {/* Link */}
                   <button className="mb-4 text-[13px] font-semibold text-[#00B57A]">
                     Read Review →
                   </button>
 
                   <div className="mb-4 h-px w-full bg-[#E5E7EB]" />
 
-                  {/* Bottom */}
                   <div className="flex items-center justify-between gap-3">
                     <div className="flex min-w-0 items-center gap-3">
                       <div className="h-[42px] w-[42px] shrink-0 overflow-hidden rounded-full bg-[#D1D5DB]">

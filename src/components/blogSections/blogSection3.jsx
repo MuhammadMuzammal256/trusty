@@ -38,66 +38,107 @@ const blogCards = [
   },
 ];
 
-export default function BlogSection2() {
+export default function BlogSection3() {
   const scrollRef = useRef(null);
-  const [activeDot, setActiveDot] = useState(0);
+  const [activeSlide, setActiveSlide] = useState(0);
 
-  const handleScroll = () => {
+  const updateActiveSlide = () => {
     const container = scrollRef.current;
     if (!container) return;
 
-    const scrollLeft = container.scrollLeft;
-    const maxScrollLeft = container.scrollWidth - container.clientWidth;
+    const card = container.querySelector("[data-card]");
+    if (!card) return;
 
-    if (maxScrollLeft <= 0) {
-      setActiveDot(0);
-      return;
-    }
+    const cardWidth = card.clientWidth;
+    const gap = 24; // gap-6
+    const step = cardWidth + gap;
 
-    const totalDots = blogCards.length;
-    const currentDot = Math.round(
-      (scrollLeft / maxScrollLeft) * (totalDots - 1)
-    );
+    const currentIndex = Math.round(container.scrollLeft / step);
+    const maxIndex = Math.max(blogCards.length - 1, 0);
 
-    setActiveDot(currentDot);
+    setActiveSlide(Math.min(currentIndex, maxIndex));
   };
 
-  const scrollToDot = (index) => {
+  const handleNext = () => {
     const container = scrollRef.current;
     if (!container) return;
 
-    const maxScrollLeft = container.scrollWidth - container.clientWidth;
-    const totalDots = blogCards.length;
+    const card = container.querySelector("[data-card]");
+    if (!card) return;
 
-    const targetScroll =
-      totalDots > 1 ? (maxScrollLeft / (totalDots - 1)) * index : 0;
+    const cardWidth = card.clientWidth;
+    const gap = 24;
+    const step = cardWidth + gap;
+
+    const nextIndex = Math.min(activeSlide + 1, blogCards.length - 1);
 
     container.scrollTo({
-      left: targetScroll,
+      left: nextIndex * step,
       behavior: "smooth",
     });
+
+    setActiveSlide(nextIndex);
+  };
+
+  const handlePrev = () => {
+    const container = scrollRef.current;
+    if (!container) return;
+
+    const card = container.querySelector("[data-card]");
+    if (!card) return;
+
+    const cardWidth = card.clientWidth;
+    const gap = 24;
+    const step = cardWidth + gap;
+
+    const prevIndex = Math.max(activeSlide - 1, 0);
+
+    container.scrollTo({
+      left: prevIndex * step,
+      behavior: "smooth",
+    });
+
+    setActiveSlide(prevIndex);
   };
 
   return (
-    <section className="w-full bg-white  pt-16">
+    <div className="mx-10">
+    <section className=" mx-auto py-20 bg-[#E7F4EF] rounded-[25px]  mt-20">
       <div className="max-w-7xl mx-auto px-10 ">
-     
-        <h2 className="text-[#17253F] text-center font-semibold text-2xl sm:text-3xl lg:text-4xl mb-14">
-          Reviews Matter
-        </h2>
+        <div className="flex flex-col sm:flex-row items-center justify-between mb-8 sm:mb-10 gap-4 sm:gap-0">
+          <h1 className="font-semibold text-[28px] sm:text-[38px] text-[#1E2A3B] text-center sm:text-left">
+            Best in Travel Insurance Company
+          </h1>
 
-        
+          <div className="flex gap-3 shrink-0">
+            <button
+              onClick={handlePrev}
+              className={`w-10 h-10 flex items-center justify-center rounded-full text-white transition-colors duration-300 
+              `}
+            >
+              <img src="/images/back.svg" alt="Previous" />
+            </button>
+
+            <button
+              onClick={handleNext}
+              className={`w-10 h-10 flex items-center justify-center rounded-full text-white transition-colors duration-300 `}
+            >
+              <img src="/images/next.svg" alt="Next" />
+            </button>
+          </div>
+        </div>
+
         <div
           ref={scrollRef}
-          onScroll={handleScroll}
-          className="flex gap-6 overflow-x-auto pb-4 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          onScroll={updateActiveSlide}
+          className="flex gap-6 overflow-x-auto pb-4 scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {blogCards.map((card) => (
             <div
               key={card.id}
+              data-card
               className="shrink-0 w-full md:max-w-[400px] lg:w-[377px] lg:h-[400px] border border-[#C3C8D0] rounded-[25px] bg-[#E9ECEF] p-4 sm:p-5"
             >
-           
               <div className="relative w-full h-[220px] sm:h-[260px] md:h-[300px] lg:h-[180px] rounded-[20px] overflow-hidden">
                 <Image
                   src={card.image}
@@ -107,7 +148,6 @@ export default function BlogSection2() {
                 />
               </div>
 
-              
               <div className="flex flex-wrap items-center gap-3 mt-5">
                 <div className="w-[142px] h-[33px] px-[18px] gap-[6px] rounded-[56px] border border-[#C3C8D0] bg-[#FFFFFF] flex items-center justify-center">
                   <p className="text-[#2D2D2D] text-[14px] leading-[100%] font-normal">
@@ -122,16 +162,13 @@ export default function BlogSection2() {
                 </div>
               </div>
 
-   
               <h3 className="text-[#252525] font-semibold text-[18px] leading-[26px] mt-5">
                 {card.title}
               </h3>
 
-
               <p className="text-[#4B4B4B] font-normal text-[16px] leading-[24px] mt-3">
                 {card.description}
               </p>
-
 
               <button className="mt-0 inline-flex items-center gap-2 group hover:cursor-pointer">
                 <span className="text-[#04DA8D] font-semibold text-[16px] leading-[30px]">
@@ -145,23 +182,9 @@ export default function BlogSection2() {
             </div>
           ))}
         </div>
-
-
-        <div className="flex items-center justify-center gap-[3px] mt-6">
-          {blogCards.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => scrollToDot(index)}
-              className={`transition-all duration-300 ${
-                activeDot === index
-                  ? "w-[29px] h-[8px] bg-[#17253F] rounded-[34px]"
-                  : "w-[8px] h-[8px] border border-[#17253F] rounded-full bg-transparent"
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
       </div>
     </section>
+    </div>
+
   );
 }

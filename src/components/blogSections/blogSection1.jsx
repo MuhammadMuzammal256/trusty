@@ -23,7 +23,7 @@ export default function BolgSection1() {
   ];
 
   return (
-    <div className=" bg-[url('/images/Hero-bg.svg')] bg-cover bg-start">
+    <div className=" bg-[url('/images/Hero-bg.svg')] pb-5 bg-cover bg-start">
       <div className="max-w-7xl px-10 mx-auto h-full">
         <div className="pt-20  pb-[55px] sm:pb-[70px] lg:pb-[0px]">
    
@@ -71,9 +71,7 @@ export default function BolgSection1() {
         </button>
           </div>
 
-          {/* Cards */}
           <div className="  grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-6.25 items-stretch">
-            {/* Left Big Card */}
             <div className="bg-[#EFF3F7] rounded-[24px] p-[12px] sm:p-[14px] lg:p-[15px] ">
           <div className="relative w-full aspect-[556/290] rounded-[16px] overflow-hidden">
   <Image
@@ -104,7 +102,6 @@ export default function BolgSection1() {
               </div>
             </div>
 
-            {/* Right Side Cards */}
             <div className="flex flex-col gap-4 sm:gap-8.5">
               {sideBlogs.map((item) => (
                 <div

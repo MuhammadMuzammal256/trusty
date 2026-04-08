@@ -4,6 +4,5 @@
 body {
   background: var(--background);
   color: #17253F !important;
-  font-family: var(--font-poppins),
-   /* font-family: var(--font-poppins), Helvetica, sans-serif; */
+  font-family: var(--font-poppins), Helvetica, sans-serif;
 }

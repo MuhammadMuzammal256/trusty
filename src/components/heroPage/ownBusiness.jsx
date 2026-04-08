@@ -4,15 +4,9 @@ export default function OwnBusiness() {
   return (
     <section className="mx-10 bg-white py-4 md:py-6">
       
-      {/* Dark Box */}
       <div className="rounded-[22px] bg-[#16284A]">
-        
-        {/* Centered Content */}
         <div className="mx-auto max-w-7xl px-10 py-10 md:px-12 md:py-14 lg:px-[40px]">
-          
           <div className="flex flex-col items-center justify-between gap-10 md:flex-row">
-            
-            {/* LEFT TEXT */}
             <div className="max-w-[470px]">
               <h2 className="mb-5 text-[34px] font-semibold leading-[1.08] text-white lg:text-[40px]">
                 Own a Business? Sign Up Now
@@ -31,7 +25,6 @@ export default function OwnBusiness() {
               </button>
             </div>
 
-            {/* RIGHT IMAGE */}
             <div className="w-full max-w-[500px]">
               <img
                 src="/images/top.svg"
