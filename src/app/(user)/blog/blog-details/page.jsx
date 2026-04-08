@@ -186,7 +186,7 @@ Let’s Find
             Our mission is to make your day better. We get it. We like to escape the rush out of every day and we want to help you make your best life too. Whether you&apos;re writing hand or working out, a night out or an extra bath to keep it lively. Best fitness when you don&apos;t need while we are stretching. We want you to give yourself a boost to your friends, family and mindfulness.
           </p>
         </section>
-        <section className="mt-8 bg-[#E7F4EF] rounded-3xl max-h-[242px] p-10">
+        <section className="mt-8 bg-[#E7F4EF] rounded-3xl  p-10">
           <h2 className=" mb-6 text-[24px] font-extrabold text-black">
             Conclusion
           </h2>

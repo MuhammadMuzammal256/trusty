@@ -11,6 +11,7 @@ const blogCards = [
     title: "The FTC’s fake reviews ruling and what it means for you",
     description: "The prevalence of influencers in our",
   },
+  
   {
     id: 2,
     image: "/images/bss1.svg",
@@ -27,20 +28,34 @@ const blogCards = [
     title: "The FTC’s fake reviews ruling and what it means for you",
     description: "The prevalence of influencers in our",
   },
+  {
+    id: 4,
+    image: "/images/bss1.svg",
+    category: "Review Matters",
+    date: "July 30, 2024",
+    title: "The FTC’s fake reviews ruling and what it means for you",
+    description: "The prevalence of influencers in our",
+  },
+    {
+    id: 5,
+    image: "/images/bss1.svg",
+    category: "Review Matters",
+    date: "July 30, 2024",
+    title: "The FTC’s fake reviews ruling and what it means for you",
+    description: "The prevalence of influencers in our",
+  },
 ];
 
 export default function BlogSection33() {
   return (
-    <div className="mx-5 sm:mx-10">
-      <section className="mx-auto py-10 sm:py-16 bg-[#E7F4EF] rounded-[25px] ">
+    <div className="mx-10 sm:mx-10">
+      <section className="mx-auto py-10 sm:py-16 bg-[#E7F4EF] rounded-[25px]">
         <div className="max-w-7xl mx-auto px-5 sm:px-10">
-          
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex overflow-x-auto gap-6 scrollbar-hide">
             {blogCards.map((card) => (
               <div
                 key={card.id}
-                className="w-full border border-[#C3C8D0] rounded-[25px] bg-white p-4 sm:p-5"
+                className="min-w-[300px] sm:min-w-[350px] lg:min-w-[380px] border border-[#C3C8D0] rounded-[25px] bg-white p-4 sm:p-5"
               >
                 <div className="relative w-full h-[200px] sm:h-[220px] md:h-[250px] lg:h-[180px] rounded-[20px] overflow-hidden">
                   <Image
@@ -85,7 +100,6 @@ export default function BlogSection33() {
               </div>
             ))}
           </div>
-
         </div>
       </section>
     </div>
