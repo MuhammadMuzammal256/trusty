@@ -32,7 +32,7 @@ export default function AboutSection3() {
     <section className=" mx-10 ">
       <div className="rounded-3xl bg-[rgba(231,244,239,1)] px-6 py-14 sm:px-10 md:px-14">
           <div className="max-w-7xl mx-auto">
-    <h2 className="text-center text-xl sm:text-2xl font-'Poppins' font-semibold lg:text-[38px] md:text-[38px] text-[30px] leading-[1.2] tracking-[0%] text-[rgba(23,37,63,1)]">
+    <h2 className="text-center text-xl sm:text-2xl font-semibold lg:text-[38px] md:text-[38px] text-[30px] leading-[1.2]  text-[#17253F]">
           What people says about Trusty Feedback
         </h2>
         <div className="mt-12 overflow-hidden">
@@ -62,7 +62,7 @@ export default function AboutSection3() {
                         />
                       </div>
 
-                      <span className="text-sm font-semibold text-4 text-[#17253F]">
+                      <span className="text-sm font-medium text-4 text-[#17253F]">
                         {item.name}
                       </span>
 
@@ -76,7 +76,7 @@ export default function AboutSection3() {
                         <img src="/Images/up.svg" alt="" />
                       </span>
 
-                      <p className="relative z-1 pt-6 text-[rgba(23,37,63,1)] font-'Poppins' font-normal text-[16px] leading-[178%]">
+                      <p className="relative z-1 pt-6 text-[#17253F]  font-normal text-[14px] leading-[178%]">
                         {item.text}
                       </p>
 
@@ -112,7 +112,7 @@ export default function AboutSection3() {
                         <img src="/Images/up.svg" alt="" />
                       </span>
 
-                      <p className="relative z-1 pt-6 text-[rgba(23,37,63,1)] font-'Poppins' font-normal text-[16px] leading-[178%]">
+                      <p className="relative z-1 pt-6 text-[#17253F]  font-normal text-[14px] leading-[178%]">
                         {item.text}
                       </p>
 

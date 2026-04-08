@@ -5,13 +5,12 @@ export default function WriteReviewSection1() {
     <div className="bg-[url('/images/Hero-bg.svg')] bg-cover bg-start pb-5 pt-20 sm:pb-[70px] lg:pb-15">
       <div className="max-w-7xl mx-auto px-10 mb-[40px] sm:mb-[52px] lg:mb-[68px]">
         <div className="text-center mb-20">
-          <p className="text-[12px] sm:text-[16px] font-light leading-[1.4] text-gray-400 mb-7.5">
-            Homepage{" "}
-            <span className="text-[#17253F] font-light">
-              <span className="mx-1">{">"}</span>
-              Write a review
-            </span>
-          </p>
+ 
+<p className="text-[12px] sm:text-[16px] font-light leading-[1.4] mb-8.5">
+  <span className="text-gray-400">Homepage</span>
+  <span className="mx-1 text-gray-400">›</span>
+  <span className="text-[#17253F] font-medium">Write a review</span>
+</p>
 
           <h2 className="text-[#17253F] font-semibold text-[30px] leading-[1.15] sm:text-[40px] lg:text-[50px] mb-6">
             Write a Review on Products & Services

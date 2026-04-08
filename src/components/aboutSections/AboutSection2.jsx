@@ -10,14 +10,14 @@ const teamImages = {
 
 export default function AboutSection2() {
   return (
-    <section className="bg-white py-16 md:pt-20  pb-0">
+    <section className="bg-white py-16 md:pt-8  pb-0">
       <div className="mx-auto max-w-7xl px-10">
         <h2 className="text-center text-2xl font-bold text-[#0f172a] sm:text-[1.75rem]">
           Trusty Feedback’s Team
         </h2>
 
         <div
-          className="mt-10 flex gap-5 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="mt-10 flex gap-5 overflow-x-auto pb-2  [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {[teamImages.team1, teamImages.team2, teamImages.team3, teamImages.team4].map((src, i) => (
             <div
@@ -35,10 +35,10 @@ export default function AboutSection2() {
             </div>
           ))}
         </div>
-
-        <div className="mt-20 grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+<div className="border-b border-gray-200 mt-8 md:mt-20"></div>
+        <div className=" mt-5 sm:mt-14 lg:mt-20 grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
-            <h2 className=" font-'Poppins' font-semibold lg:text-[38px] text-[30px]leading-11.75 tracking-normal text-[rgba(23,37,63,1)] sm:text-4xl md:text-[2.65rem] md:leading-[1.15]">
+            <h2 className="  font-semibold lg:text-[38px] text-[30px]  text-[#17253F] sm:text-4xl md:text-[2.65rem] md:leading-[1.15]">
               Connecting Consumers and Businesses Through Authentic Reviews
             </h2>
 
@@ -50,7 +50,7 @@ export default function AboutSection2() {
 
             <button
               type="button"
-              className="mt-4 h-13.25 w-38.25 rounded-full bg-[rgba(4,218,141,1)]   text-sm font-semibold text-[rgba(23,37,63,1)] shadow-sm transition hover:opacity-95"
+              className="mt-4 h-13.25 w-38.25 rounded-full bg-[#04DA8D]   text-sm font-semibold text-[#17253F] shadow-sm transition hover:opacity-95"
             >
               Get Started
             </button>

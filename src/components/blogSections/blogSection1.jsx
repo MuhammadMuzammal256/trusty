@@ -29,10 +29,11 @@ export default function BolgSection1() {
         <div className="pt-20  pb-[55px] sm:pb-[70px] lg:pb-[0px]">
    
           <div className="text-center mb-[40px] sm:mb-[52px] lg:mb-[68px]">
-            <p className="text-[12px] sm:text-[16px] font-light leading-[1.4] text-[#17253F] mb-7.5">
-              Homepage <span className="mx-1">{">"}</span>{" "}
-              <span className="text-[#17253F] font-light">Blogs</span>
-            </p>
+           <p className="text-[12px] sm:text-[16px] font-light leading-[1.4] mb-7.5">
+  <span className="text-gray-400">Homepage</span>
+  <span className="mx-1 text-gray-400">›</span>
+  <span className="text-[#17253F] font-medium">Blog</span>
+</p>
 
             <h2 className="text-[#17253F] font-semibold text-[30px] leading-[1.15] sm:text-[40px] lg:text-[50px]">
   Fresh Perspectives & Expert Advice

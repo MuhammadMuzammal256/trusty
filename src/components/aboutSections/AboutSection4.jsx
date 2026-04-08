@@ -2,39 +2,15 @@
 
 import { useState } from "react";
 
-function IconArrowUp({ className = "" }) {
+function IconArrowUp() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={`h-5 w-5 ${className}`}
-    >
-      <path d="M12 19V5" />
-      <path d="M6 11l6-6 6 6" />
-    </svg>
+  <img src="/images/arrowUp.svg" alt="" />
   );
 }
 
-function IconArrowRight({ className = "" }) {
+function IconArrowRight() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={`h-5 w-5 ${className}`}
-    >
-      <path d="M5 12h14" />
-      <path d="M13 6l6 6-6 6" />
-    </svg>
+  <img src="/images/arrowGreen.svg" alt="" />
   );
 }
 
@@ -66,16 +42,16 @@ const faqItems = [
 ];
 
 export default function AboutSection4() {
-  const [openFaq, setOpenFaq] = useState(0);
+  const [openFaq, setOpenFaq] = useState(-1);
 
   return (
     <section className="w-full px-6 py-16 md:px-35 md:py-20">
       <div className="mx-auto w-full max-w-7xl">
-        <h2 className="font-poppins font-semibold lg:text-[38px] md:text-[38px] leading-tight tracking-normal text-center text-[rgba(23,37,63,1)] sm:text-[1.65rem]">
+        <h2 className="font-poppins font-semibold lg:text-[38px] md:text-[38px] leading-tight tracking-normal text-center text-[#17253F] sm:text-[1.65rem]">
           Frequently Asked Questions
         </h2>
 
-        <p className="mx-auto font-'Open_Sans' font-normal not-italic text-base leading-[1.6] tracking-normal [leading-trim:cap-height] mt-4 max-w-xl text-center text-[15px] text-[rgba(23,37,63,1)]">
+        <p className="mx-auto font-'Open_Sans' font-light not-italic text-base leading-[1.6] tracking-normal [leading-trim:cap-height] mt-4 max-w-xl text-center text-[15px] text-[#17253F]">
           Here are some common questions about our Reviews and their answers.
         </p>
 
@@ -91,30 +67,27 @@ export default function AboutSection4() {
                   onClick={() => setOpenFaq(open ? -1 : index)}
                   aria-expanded={open}
                 >
-                  <span className="flex-1 font-'Open_Sans' font-bold lg:text-[22px] md:text-[22px] text-4 leading-[120%] tracking-normal  text-[rgba(23,37,63,1)]">
+                  <span className="flex-1  font-bold  md:text-[22px] text-4 leading-[120%] tracking-normal  text-[#17253F]">
                     {item.q}
                   </span>
 
                   <span
-                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
-                      open
-                        ? "bg-[rgba(214,214,214,1)] text-[#4a5568]"
-                        : "bg-[rgba(4,218,141,1)] text-white"
-                    }`}
+                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full transition-transform duration-200 
+                      
+                   `}
                   >
-                    {open ? (
-                      <IconArrowUp className="text-[#4a5568]" />
-                    ) : (
-                      <IconArrowRight className="text-white" />
-                    )}
+                    {open ? <IconArrowUp /> : <IconArrowRight />}
                   </span>
                 </button>
 
-                {open && (
-                  <p className="mt-3 pr-14 font-'Open_Sans' font-normal lg:text-[16px] md:text-[16px] text-3 leading-[160%] tracking-normal [leading-trim:cap_height] text-[rgba(23,37,63,1)]">
+                <div
+                  className="overflow-hidden transition-[max-height,opacity] duration-300"
+                  style={{ maxHeight: open ? "200px" : "0px", opacity: open ? 1 : 0 }}
+                >
+                  <p className="mt-3 pr-14  font-light lg:text-[16px] md:text-[16px] text-3 leading-[160%] tracking-normal [leading-trim:cap_height] text-[rgba(23,37,63,1)]">
                     {item.a}
                   </p>
-                )}
+                </div>
               </div>
             );
           })}

@@ -35,7 +35,7 @@ export default function BlogSection33() {
       <section className="mx-auto py-10 sm:py-16 bg-[#E7F4EF] rounded-[25px] ">
         <div className="max-w-7xl mx-auto px-5 sm:px-10">
           
-          {/* Cards Grid */}
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogCards.map((card) => (
               <div

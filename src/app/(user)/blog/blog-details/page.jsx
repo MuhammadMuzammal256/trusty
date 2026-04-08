@@ -1,6 +1,5 @@
 "use client";
 import BlogSection33 from "@/components/blogDeatail/DeatilesCompo";
-import BlogSection3 from "@/components/blogSections/blogSection3";
 import Image from "next/image";
 import { useState } from "react";
 export default function blogDeatils() {
@@ -80,34 +79,40 @@ export default function blogDeatils() {
       <div className="mx-auto max-w-5xl rounded-sm bg-white px-10    md:px-10">
 <div className="flex flex-col items-center gap-[35px]">
 
-  {/* Breadcrumb + Heading */}
+
   <div className="text-center">
-    <p className="text-[12px] sm:text-[16px] font-light leading-[1.4] text-[#17253F] mb-8.5">
-      Homepage <span className="mx-1">{">"}</span>
-      <span className="text-[#17253F] font-light">Blogs</span>
-    </p>
+<p className="text-[12px] sm:text-[16px] font-light leading-[1.4] mb-8.5">
+  <span className="text-gray-400">Homepage</span>
+  <span className="mx-1 text-gray-400">›</span>
+  <span className="text-gray-400">Blogs</span>
+  <span className="mx-1 text-gray-400">›</span>
+  <span className="text-[#17253F] font-medium">Romance Scams</span>
+</p>
 
     <h2 className="text-[#17253F] font-semibold text-[30px] leading-[1.15] sm:text-[40px] lg:text-[50px]">
       Fresh Perspectives & Expert Advice
     </h2>
   </div>
 
-  {/* Author Info */}
+
   <div className="flex items-center justify-center gap-2 text-[12px] text-gray-500">
     <img
       src="/images/top-img.svg"
       alt="icon"
       className="inline-block h-5 w-5 rounded-full object-cover"
     />
-    <span className="text-[rgba(23,37,63,1)]">
+    <span className="text-[#252525]">
       Article by :{" "}
-      <span className="font-medium text-[rgba(23,37,63,1)]">
+      <span className="font-medium text-gray-500">
         TrustFeedback
       </span>
     </span>
-    <span>•</span>
-    <span className="text-[rgba(23,37,63,1)]">
-      Published : July 23, 2024
+
+     <span className="text-[#252525]">
+      Published :{" "}
+      <span className="font-medium text-gray-500">
+         July 30, 2024
+      </span>
     </span>
   </div>
 
@@ -125,27 +130,33 @@ export default function blogDeatils() {
 
         <section className="mt-8 space-y-6 text-[13px] leading-6 text-slate-700">
           <div>
-            <h2 className="mb-2  font-sans font-extrabold text-[24px] leading-[159%] tracking-[0px] text-[rgba(23,37,63,1)]">Our Mission</h2>
-            <p className="text-black font-'Basier_Circle' font-normal text-[17px] leading-[29px] tracking-[0%]">
-              Our mission is to make your day better. We get it. We like to keep one foot out of every day and we want to help you do that too. You deserve your writing hand or working out, a night out or an extra bath to keep focused or enjoy time. Best fitness when you don&apos;t need while we are stretching. We want you to give yourself a boost to your friends, family and mindfulness.
-            </p>
+<h2 className="mb-2 font-bold text-[24px] text-[#252525]">
+  Our Mission
+</h2>
+       <p className="text-black  font-normal text-[17px] leading-[29px]">
+  Our mission is to make your day better. We get it. We like to keep one foot out of every day and we want to help you do that too. You deserve your writing hand or working out, a night out or an extra bath to keep focused or enjoy time. Best fitness when you don&apos;t need while we are stretching. We want you to give yourself a boost to your friends, family and mindfulness.
+</p>
           </div>
 
           <div>
-            <h2 className="mb-2 text-[18px] font-extrabold font-poppins  leading-[159%] tracking-normal text-[rgba(23,37,63,1)]">Dive In: SeaQuestLynchburg</h2>
-            <p className="text-black font-'Basier_Circle' font-normal text-[17px] leading-[29px] tracking-[0%]">
+           <h2 className="mb-2 font-bold text-[24px] text-[#252525]">
+Dive In! SeaQuest Lynchburg
+</h2>
+          <p className="text-black  font-normal text-[17px] leading-[29px]">
               Looking for an exciting, immersive and informative animal experience to increase your knowledge? SeaQuest Lynchburg is a special indoor aquarium where you can touch and feed a tropical rainforest, tropical stingrays in one of the world&apos;s largest touch tanks, and discover creatures from around the world. Look and feed sloths from a variety of viewpoints from throughout the exhibit.
             </p>
-            <p className="mt-4 text-black font-'Basier_Circle' font-normal text-[17px] leading-[29px] tracking-[0%]">
+            <p className="mt-4 text-black  font-normal text-[17px] leading-[29px]">
               Full journeys through the Amazon, California, Egyptian desert, and Alaskan jungle as you interact with sharks, stingrays, reptiles, birds and countless marine life.
             </p>
-            <p className="mt-4 text-black font-'Basier_Circle' font-normal text-[17px] leading-[29px] tracking-[0%]">
+            <p className="mt-4 text-black  font-normal text-[17px] leading-[29px]">
               Our mission is to make your day better. We get it. We like to escape the rush out of every day and we want to help you do just that too. Whether you&apos;re writing hand or working out, a night out or an extra bath to keep focused or enjoy time. Best fitness when you don&apos;t need while we are stretching. We want you to give yourself a boost to your friends, family and mindfulness.
             </p>
           </div>
 
           <div>
-            <h2 className="mb-2 text-[18px] font-extrabold text-[rgba(23,37,63,1)]">Let&apos;s Find</h2>
+                      <h2 className="mb-2 font-bold text-[24px] text-[#252525]">
+Let’s Find
+</h2>
             <p className="text-black font-'Basier_Circle' font-normal text-[17px] leading-[29px] tracking-[0%]">
               Our mission is to make your day better. We get it. We like to escape the rush out of every day and we want to help you make your day too. You deserve your writing hand or working out, a night out or an extra bath to keep focused or enjoy time. Best fitness when you don&apos;t need while we are stretching. We want you to give yourself a boost to your friends, family and mindfulness.
             </p>
@@ -163,34 +174,34 @@ export default function blogDeatils() {
         </div>
 
         <section className="mt-8 space-y-4 text-[13px] leading-6 text-slate-700">
-          <p className="text-black font-'Basier_Circle' font-normal text-[17px] leading-[29px] tracking-[0%]">
+    <p className="text-black  font-normal text-[17px] leading-[29px]">
             Looking for a way with a measured and informative animal experience to increase your knowledge? SeaQuest Lynchburg is a special indoor aquarium where you can touch and feed a tropical rainforest, tropical stingrays in one of the world&apos;s largest touch tanks, and discover creatures from around the world. Look and feed sloths from a variety of viewpoints from throughout the exhibit.
           </p>
 
-          <p className="text-black font-'Basier_Circle' font-normal text-[17px] leading-[29px] tracking-[0%]">
+            <p className="text-black  font-normal text-[17px] leading-[29px]">
             Full journeys through the Amazon, California, Egyptian desert, and Alaskan jungle as you interact with sharks, reptiles, birds and countless underwater life.
           </p>
 
-          <p className="text-black font-'Basier_Circle' font-normal text-[17px] leading-[29px] tracking-[0%]">
+             <p className="text-black  font-normal text-[17px] leading-[29px]">
             Our mission is to make your day better. We get it. We like to escape the rush out of every day and we want to help you make your best life too. Whether you&apos;re writing hand or working out, a night out or an extra bath to keep it lively. Best fitness when you don&apos;t need while we are stretching. We want you to give yourself a boost to your friends, family and mindfulness.
           </p>
         </section>
-        <section className="mt-8 bg-[rgba(231,244,239,1)] rounded-3xl max-h-[242px] p-10">
-          <h2 className="  text-[18px] font-extrabold text-[rgba(23,37,63,1)]">
+        <section className="mt-8 bg-[#E7F4EF] rounded-3xl max-h-[242px] p-10">
+          <h2 className=" mb-6 text-[24px] font-extrabold text-black">
             Conclusion
           </h2>
-          <p className="text-black font-'Basier_Circle' font-normal text-[17px] leading-[29px] tracking-[0%] mb-8">
-            Our mission is to make your day better. We get it. We like to escape the rush out of every day and we want to help you do your best life too. Whether you're working hand or working out, a night out or an extra bath, making the world less stressful. Best mood because you need while we are stretching. We want you to give yourself a boost to your friends, family and mindfulness.
-          </p>
+      <p className="text-[#000000]  font-normal text-[16px] leading-[29px]">
+  Our mission is to make your day better. We get it. We like to squeeze the most out of every day and we want to help you live your best life too. Whether you’re working hard or working out, a night owl or an early bird, staying focused or staying Zen, Boost Patches give you that little extra something. We want you to give yourself a boost into better health, fitness, and mindfulness.
+</p>
         </section>
         <section className="mt-10 border-t border-[#E5E7EB] pt-10">
-          <h3 className="mb-6 text-[32px] font-extrabold tracking-[-0.02em] text-[rgba(23,37,63,1)]">
+          <h3 className="mb-8 text-[32px] font-extrabold tracking-[-0.02em] text-[rgba(23,37,63,1)]">
             Leave A Reply
           </h3>
 
           <form className="space-y-5" onSubmit={handleSubmit} noValidate>
             <div>
-              <div className="relative pt-4">
+              <div className="relative ">
                 {!form.comment && (
                   <label
                     htmlFor="comment"
