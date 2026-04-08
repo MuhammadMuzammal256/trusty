@@ -6,3 +6,11 @@ body {
   color: #17253F !important;
   font-family: var(--font-poppins), Helvetica, sans-serif;
 }
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
