@@ -9,7 +9,7 @@ export default function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
 const navItems = [
-  { name: "Write a review", href: "#" },
+  { name: "Write a review", href: "/writeReview" },
   { name: "How it Works", href: "#" },
   { name: "About Us", href: "/about" },
   { name: "Blog", href: "/blog" },
