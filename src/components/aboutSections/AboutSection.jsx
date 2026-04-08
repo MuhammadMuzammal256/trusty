@@ -17,7 +17,7 @@ export default function AboutSection() {
             Trusty Feedback connects people with great local businesses.
           </h1>
 
-          <div className="mx-auto mt-8 grid max-w-7xl px-10 gap-2 md:grid-cols-[1.05fr_1fr] md:items-start">
+          <div className="mx-auto mt-8 grid max-w-7xl px-10  lg:px-30 xl-px-10 gap-2 md:grid-cols-[1.05fr_1fr] md:items-start">
             <h2 className=" font-'Poppins' font-semibold text-[38px] mt-8 leading-none tracking-normal text-[rgba(23,37,63,1)] md:text-[26px]">
               Meet Our Founder &amp; CEO
             </h2>
@@ -30,7 +30,7 @@ export default function AboutSection() {
             </p>
           </div>
 
-          <div className="mx-auto mt-6 max-w-7xl md:px-30 lg:px-10 overflow-hidden rounded-[18px]">
+          <div className="mx-auto mt-6 max-w-7xl px-10  lg:px-30 xl-px-10 overflow-hidden rounded-[18px]">
             <Image
               src={aboutImages.founder}
               alt="Founder"
