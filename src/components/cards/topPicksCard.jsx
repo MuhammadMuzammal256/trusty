@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function TopPicksCard() {
   return (
 <div className="w-full md:w-[280px] bg-[#EFF3F7] rounded-2xl p-4">
@@ -34,13 +36,14 @@ export default function TopPicksCard() {
           <span className="text-sm text-gray-400">(7891)</span>
         </div>
 
-       
-        <div className="flex items-center gap-2 mt-4 cursor-pointer">
-          <span className="font-semibold text-[#17253F]">
-            View Details
-          </span>
-          <img src="/images/arr.svg" alt="arrow" className="h-4 w-4" />
-        </div>
+   <Link href="/heropage/company-details">
+  <div className="flex items-center gap-2 mt-4 cursor-pointer">
+    <span className="font-semibold text-[#17253F]">
+      View Details
+    </span>
+    <img src="/images/arr.svg" alt="arrow icon" className="h-4 w-4" />
+  </div>
+</Link>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 "use client";
-import BlogSection33 from "@/components/blogDeatail/DeatilesCompo";
+
+import BlogSection33 from "@/components/blogSections/blogDeatail/DeatilesCompo";
 import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 import { useState } from "react";
