@@ -13,7 +13,7 @@ const navItems = [
   { name: "How it Works", href: "#" },
   { name: "About Us", href: "/about" },
   { name: "Blog", href: "/blog" },
-  { name: "Login", href: "#" },
+  { name: "Login", href: "/login" },
 ];
 
   return (
@@ -80,9 +80,9 @@ const navItems = [
         </div>
       </div>
           {menuOpen && (
-  <div className="md:hidden flex mx-auto border border-[#17253F26] rounded-full p-[6px] mt-4 mx-10 max-w-[267px] ">
+    <div className="md:hidden flex mx-auto border border-[#17253F26] rounded-full p-[6px] mt-4 mx-10 max-w-[267px] ">
     <button
-      onClick={() => setActive("business")}
+      onClick={() => { setActive("business"); setMenuOpen(false); }}
       className={`py-[10px] px-[15px] flex items-center justify-center rounded-[100px] text-sm font-medium transition ${
         active === "business" ? "bg-[#17253F] text-white" : "text-[#17253F]"
       }`}
@@ -91,7 +91,7 @@ const navItems = [
     </button>
 
     <button
-      onClick={() => setActive("consumer")}
+      onClick={() => { setActive("consumer"); setMenuOpen(false); }}
       className={`py-[10px] px-[15px] flex items-center justify-center rounded-full text-sm font-medium transition ${
         active === "consumer" ? "bg-[#17253F] text-white" : "text-[#17253F]"
       }`}
@@ -104,7 +104,12 @@ const navItems = [
         <div className="lg:hidden w-full bg-white z-50 relative">
           <div className="max-w-7xl mx-auto px-10">
             {navItems.map((item) => (
-              <Link key={item.name} href={item.href} className="text-[#17253F] font-medium border-b border-[#17253F26] w-full flex flex-col justify-center items-center md:items-start p-2 px-4 gap-4">
+              <Link
+                key={item.name}
+                href={item.href}
+                onClick={() => setMenuOpen(false)}
+                className="text-[#17253F] font-medium border-b border-[#17253F26] w-full flex flex-col justify-center items-center md:items-start p-2 px-4 gap-4"
+              >
                 {item.name}
               </Link>
             ))}

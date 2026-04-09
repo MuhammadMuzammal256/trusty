@@ -1,5 +1,6 @@
 "use client";
 import BlogSection33 from "@/components/blogDeatail/DeatilesCompo";
+import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 import { useState } from "react";
 export default function blogDeatils() {
@@ -309,6 +310,10 @@ Let’s Find
       
     </main>
     <BlogSection33/>
+    
+    <Footer className="
+  rounded-tl-[0px] rounded-tr-[0px] 
+  " />
     </div>
    
   );

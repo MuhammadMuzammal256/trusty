@@ -103,7 +103,7 @@ export default function BlogSection3() {
 
   return (
     <div className="mx-10">
-    <section className=" mx-auto py-20 bg-[#E7F4EF] rounded-[25px]  mt-20">
+    <section className=" mx-auto py-20 bg-[#E7F4EF] rounded-tl-[25px] rounded-tr-[25px]   mt-20">
       <div className="max-w-7xl mx-auto px-10 ">
         <div className="flex flex-col sm:flex-row items-center justify-between mb-8 sm:mb-10 gap-4 sm:gap-0">
           <h1 className="font-semibold text-[28px] sm:text-[38px] text-[#1E2A3B] text-center sm:text-left">

@@ -25,7 +25,7 @@ export default function Home() {
 <LikeDislike />
     <OwnBusiness />
    <Discover />
-
+    <Footer />
 
     </>
   );

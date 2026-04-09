@@ -49,7 +49,7 @@ const blogCards = [
 export default function BlogSection33() {
   return (
     <div className="mx-10 sm:mx-10">
-      <section className="mx-auto py-10 sm:py-16 bg-[#E7F4EF] rounded-[25px]">
+      <section className="mx-auto py-10 sm:py-16 bg-[#E7F4EF]   rounded-tl-[25px] rounded-tr-[25px] ">
         <div className="max-w-7xl mx-auto px-5 sm:px-10">
           <div className="flex overflow-x-auto gap-6 scrollbar-hide">
             {blogCards.map((card) => (
