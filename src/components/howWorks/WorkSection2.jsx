@@ -2,7 +2,7 @@ import Image from "next/image";
 function CardIcon() {
   return (
    <Image
-           src="/Images/smallCom.svg"
+           src="/images/smallCom.svg"
            alt="person"
            height={40}
            width={40}
