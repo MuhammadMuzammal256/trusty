@@ -10,7 +10,7 @@ export default function NavBar() {
 
 const navItems = [
   { name: "Write a review", href: "/writeReview" },
-  { name: "How it Works", href: "#" },
+  { name: "How it Works", href: "/how-works" },
   { name: "About Us", href: "/about" },
   { name: "Blog", href: "/blog" },
   { name: "Login", href: "/login" },

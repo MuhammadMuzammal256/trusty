@@ -13,7 +13,7 @@ export default function LoginPage() {
 Log In Now
 </p>
           <h2 className="text-[#17253F] font-semibold text-[30px] leading-[1.15] sm:text-[40px] lg:text-[50px] ">
-            Write a Review on Products & Services
+       Read. Write. Discover.
           </h2>
 
 
