@@ -39,7 +39,8 @@ export default function LikeDislike() {
 
       
         <div className="w-full overflow-hidden">
-          <Marquee direction="left" speed={20}>
+          <div className="inline-flex gap-5 py-2 -ml-5">
+ <Marquee direction="left" speed={20}>
             <div className="inline-flex gap-5 py-2">
               {[...reviews, ...reviews].map((item, index) => (
           
@@ -122,19 +123,19 @@ export default function LikeDislike() {
               ))}
             </div>
           </Marquee>
+          </div>
+         
         </div>
 
       
-        <div className="w-full overflow-hidden mt-6">
-          <Marquee direction="right" speed={20}>
-            <div className="inline-flex gap-5 py-2">
-              {[...reviews, ...reviews].map((item, index) => (
-     
-            <div
-                  key={index}
-                  className="w-[376px] shrink-0 overflow-hidden rounded-[20px] border border-[#E5E7EB] bg-[#EFF3F7] px-4 py-4 align-top shadow-none"
-                >
-      
+     <div className="w-full overflow-hidden">
+  <Marquee direction="right" speed={20} gradient={false}>
+    <div className="flex py-2">
+      {[...reviews, ...reviews].map((item, index) => (
+        <div
+          key={index}
+          className="w-[376px] shrink-0 mr-5 overflow-hidden rounded-[20px] border border-[#E5E7EB] bg-[#EFF3F7] px-4 py-4"
+        >
                   <div className="mb-4 flex items-start gap-3">
                     <div className="relative h-[54px] w-[54px] shrink-0 rounded-[10px] border border-[#D1D5DB] bg-[#F8F8F8]">
                       <span className="absolute right-[-2px] top-[-2px] h-[10px] w-[10px] rounded-full border border-[#16A34A] bg-[#22C55E]"></span>
@@ -150,7 +151,6 @@ export default function LikeDislike() {
                     </div>
                   </div>
 
-               
                   <div className="mb-3 flex items-center gap-2">
                     <div className="flex items-center gap-[2px]">
                       {[...Array(5)].map((_, i) => (
@@ -158,7 +158,7 @@ export default function LikeDislike() {
                           key={i}
                           className="flex h-[14px] w-[14px] items-center justify-center bg-[#00B67A] text-[9px] text-white"
                         >
-                          <img src="/images/stars.svg" alt="" />
+                             <img src="/images/stars.svg" alt="" />
                         </div>
                       ))}
                     </div>
@@ -172,12 +172,14 @@ export default function LikeDislike() {
   computer running like new again...
 </p>
 
+ 
                   <button className="mb-4 text-[13px] font-semibold text-[#00B57A]">
                     Read Review →
                   </button>
 
                   <div className="mb-4 h-px w-full bg-[#E5E7EB]" />
 
+                
                   <div className="flex items-center justify-between gap-3">
                     <div className="flex min-w-0 items-center gap-3">
                       <div className="h-[42px] w-[42px] shrink-0 overflow-hidden rounded-full bg-[#D1D5DB]">
@@ -209,8 +211,10 @@ export default function LikeDislike() {
               ))}
             </div>
           </Marquee>
+          </div>
+         
         </div>
-      </div>
+
     </section>
   );
 }
