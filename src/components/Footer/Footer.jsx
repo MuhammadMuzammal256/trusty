@@ -33,7 +33,7 @@ export default function Footer({ className = "" }) {
   ]
 
   return (
-    <footer className="mx-10 bg-white py-0 md:py-0">
+    <footer className="mx-10  py-0 md:py-0">
       
       <div className={`rounded-[25px] bg-[#9BDFC4] ${className}`}>
         <div className="mx-auto max-w-7xl px-10 py-10 md:py-9">

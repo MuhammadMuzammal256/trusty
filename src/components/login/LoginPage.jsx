@@ -126,10 +126,7 @@ Log In Now
 
     </div>
     <BusinessCard />
-    <Footer className="
-rounded-tl-[0px] 
-  rounded-tr-[0px] 
-" />
+    <Footer className="rounded-tl-[0px]  rounded-tr-[0px] " />
     </div>
 
   );

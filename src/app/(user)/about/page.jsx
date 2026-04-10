@@ -16,9 +16,7 @@ export default function about() {
 <AboutSection4 />
 <AboutSection5 />
   <Footer className="
-rounded-tl-[0px] 
-  rounded-tr-[0px] 
-" />
+rounded-tl-[0px]  rounded-tr-[0px] " />
 
     </> 
   );

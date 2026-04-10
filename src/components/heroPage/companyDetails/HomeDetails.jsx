@@ -3,6 +3,7 @@
 import Footer from "@/components/Footer/Footer";
 import BusinessCard from "@/components/login/businessCard";
 import Image from "next/image";
+import Link from "next/link";
 
 const reviewerAvatar = "/images/top-img.svg";
 
@@ -171,97 +172,98 @@ export default function HomeDetails() {
             </div>
 
             <div className="mt-3 space-y-3">
-              {reviews.map((review) => (
-                <article
-                  key={review.id}
-                  className="rounded-[14px] border border-[#E7ECF2] bg-[#F3F6F8] px-4 py-4"
-                >
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="flex gap-3 items-start justify-start">
-                      <div className="h-10 w-10 overflow-hidden rounded-full">
-                        <Image
-                          src={reviewerAvatar}
-                          alt={review.name}
-                          width={40}
-                          height={40}
-                          className="h-full w-full object-cover"
-                        />
-                      </div>
+  {reviews.map((review) => (
+    <Link
+      key={review.id}
+      href="/heropage/company-details/review-page"
+    >
+      <article className="rounded-[14px] border border-[#E7ECF2] bg-[#F3F6F8] px-4 py-4 cursor-pointer hover:shadow-md transition">
+        <div className="flex items-start justify-between gap-3">
+          <div className="flex gap-3 items-start justify-start">
+            <div className="h-10 w-10 overflow-hidden rounded-full">
+              <Image
+                src={reviewerAvatar}
+                alt={review.name}
+                width={40}
+                height={40}
+                className="h-full w-full object-cover"
+              />
+            </div>
 
-                      <div className="my-auto">
-                        <p className="text-[16px] font-semibold leading-none text-[#000000]">
-                          {review.name}
-                        </p>
-                        <p className="mt-1 text-[13px] text-[#000000]">{review.role}</p>
-                      </div>
-                    </div>
+            <div className="my-auto">
+              <p className="text-[16px] font-semibold leading-none text-[#000000]">
+                {review.name}
+              </p>
+              <p className="mt-1 text-[13px] text-[#000000]">
+                {review.role}
+              </p>
+            </div>
+          </div>
 
-      <div className="flex gap-1  my-auto">
-  {[...Array(5)].map((_, i) => (
-    <Image
-      key={i}
-      src="/images/stars.svg"
-      alt="star"
-      width={28}   // adjust width
-      height={28}  // adjust height
-      className="sm:w-6 sm:h-6 md:w-7 md:h-7"
-    />
+          <div className="flex gap-1 my-auto">
+            {[...Array(5)].map((_, i) => (
+              <Image
+                key={i}
+                src="/images/stars.svg"
+                alt="star"
+                width={28}
+                height={28}
+                className="sm:w-6 sm:h-6 md:w-7 md:h-7"
+              />
+            ))}
+          </div>
+        </div>
+
+        <h3 className="mt-3 text-[16px] font-bold leading-[18px] text-black">
+          {review.title}
+        </h3>
+
+        <p className="mt-2 text-[16px] font-light leading-[18px] text-[#3F4A59]">
+          {review.text}
+        </p>
+
+        <p className="mt-3 text-[14px] text-[#7B8794]">
+          <span className="font-semibold text-[#4A4A4A]">
+            Date of experience:
+          </span>{" "}
+          <span className="font-normal">{review.date}</span>
+        </p>
+
+        <div className="mt-3 border-t border-[#E3E8EE] pt-3">
+          <div className="flex items-center gap-4 text-[#7B8794]">
+            <button
+              type="button"
+              className="inline-flex items-center gap-1 hover:text-[#1A202C]"
+            >
+              <img
+                src="/images/thumb.svg"
+                alt="Useful"
+                className="h-4 w-4 sm:h-5 sm:w-5"
+              />
+              <span className="font-medium text-[16px]">
+                Useful
+              </span>
+            </button>
+
+            <button
+              type="button"
+              className="inline-flex items-center gap-1 hover:text-[#1A202C]"
+            >
+              <img
+                src="/images/share.svg"
+                alt="Share"
+                className="h-4 w-4 sm:h-5 sm:w-5"
+              />
+              <span className="font-medium text-[16px]">
+                Share
+              </span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </Link>
   ))}
 </div>
-
-                  </div>
-
-                  <h3 className="mt-3 text-[16px] font-bold leading-[18px] text-black">
-                    {review.title}
-                  </h3>
-
-                  <p className="mt-2 text-[16px] font-light leading-[18px] text-[#3F4A59]">
-                    {review.text}
-                  </p>
-
-                 <p className="mt-3 text-[14px] text-[#7B8794]">
-  <span className="font-semibold text-[#4A4A4A]">
-    Date of experience:
-  </span>{" "}
-  <span className="font-normal">
-    {review.date}
-  </span>
-</p>
-
-                  <div className="mt-3 border-t border-[#E3E8EE] pt-3">
-               <div className="flex items-center gap-4 text-[#7B8794]">
-  <button
-    type="button"
-    className="inline-flex items-center gap-1 hover:text-[#1A202C]"
-  >
-    <img
-      src="/images/thumb.svg"
-      alt="Useful"
-      className="h-4 w-4 sm:h-5 sm:w-5"
-    />
-    <span className="font-medium text-[16px] leading-[100%] font-poppins">
-      Useful
-    </span>
-  </button>
-
-  <button
-    type="button"
-    className="inline-flex items-center gap-1 hover:text-[#1A202C]"
-  >
-    <img
-      src="/images/share.svg"
-      alt="Share"
-      className="h-4 w-4 sm:h-5 sm:w-5"
-    />
-    <span className="font-medium text-[16px] leading-[100%] font-poppins">
-      Share
-    </span>
-  </button>
-</div>
-                  </div>
-                </article>
-              ))}
-            </div>
 
 <div className="mt-5 flex flex-wrap items-center justify-center gap-3 text-[14px]">
   <button className="w-8 h-8 flex items-center justify-center text-[#98A2B3]">
@@ -388,10 +390,7 @@ debbie.baker@example.com
       </div>
     </section>
        <BusinessCard />
-        <Footer className="
-    rounded-tl-[0px] 
-      rounded-tr-[0px] 
-    " />
+        <Footer className="rounded-tl-[0px] rounded-tr-[0px]  " />
       </>
   );
 }

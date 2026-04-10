@@ -13,9 +13,7 @@ export default function Blog() {
      <BolgSection2 />
      <BlogSection3 />
       <Footer className="
-     rounded-tl-[0px] 
-       rounded-tr-[0px] 
-     " />
+     rounded-tl-[0px] rounded-tr-[0px] " />
     </> 
   );
 }
