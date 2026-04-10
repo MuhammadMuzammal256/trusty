@@ -15,7 +15,7 @@ export default function SinglePageReview() {
 </p>
 
         <div className="mt-5 rounded-[18px] bg-[#eff3f7] p-4 sm:p-5 md:p-[16px] shadow-[0_0_0_1px_rgba(15,23,42,0.02)]">
-          <div className="flex items-start justify-between gap-4">
+          <div className="flex items-center justify-between gap-4">
             <div className="flex items-start gap-3">
               <div className="h-[50px] w-[50px] overflow-hidden rounded-full">
                 <Image
@@ -38,9 +38,9 @@ export default function SinglePageReview() {
               </div>
             </div>
 
-            <div className="pt-[6px]">
+           
              
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap gap-1 my-auto">
           {[...Array(5)].map((_, i) => (
             <img
               key={i}
@@ -51,7 +51,7 @@ export default function SinglePageReview() {
           ))}
         </div>
             </div>
-          </div>
+
 
           <h2 className="mt-5  font-sans font-bold text-[16px] leading-none  capitalize text-black">
             Orders Never Received

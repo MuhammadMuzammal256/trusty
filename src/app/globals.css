@@ -6,6 +6,9 @@ body {
   color: #17253F !important;
   font-family: var(--font-poppins), Helvetica, sans-serif;
 }
+button {
+  cursor: pointer;
+}
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }

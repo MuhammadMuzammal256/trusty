@@ -27,23 +27,21 @@ export default function BolgSection1() {
     <div className=" bg-[url('/images/Hero-bg.svg')] pb-5 bg-cover bg-start">
       <div className="max-w-7xl px-10 mx-auto h-full">
         <div className="pt-20  pb-[55px] sm:pb-[70px] lg:pb-[0px]">
-   
           <div className="text-center mb-[40px] sm:mb-[52px] lg:mb-[68px]">
-           <p className="text-[12px] sm:text-[16px] font-light leading-[1.4] mb-7.5">
-  <span className="text-gray-400">Homepage</span>
-  <span className="mx-1 text-gray-400">›</span>
-  <span className="text-[#17253F] font-medium">Blog</span>
-</p>
+            <p className="text-[12px] sm:text-[16px] font-light leading-[1.4] mb-7.5">
+              <span className="text-gray-400">Homepage</span>
+              <span className="mx-1 text-gray-400">›</span>
+              <span className="text-[#17253F] font-medium">Blog</span>
+            </p>
 
             <h2 className="text-[#17253F] font-semibold text-[30px] leading-[1.15] sm:text-[40px] lg:text-[50px]">
-  Fresh Perspectives & Expert Advice
-</h2>
+              Fresh Perspectives & Expert Advice
+            </h2>
           </div>
 
-          
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 sm:mb-10 lg:mb-12">
-              <h1
-  className="
+            <h1
+              className="
     font-semibold
     text-[22px]
     sm:text-[26px]
@@ -52,42 +50,31 @@ export default function BolgSection1() {
 
     max-w-[260px] sm:max-w-[300px] md:max-w-[360px] lg:max-w-full
   "
->
-  Trends in Trust
-</h1>
-  <button
-          className="
-            flex items-center justify-center
-            border-[1.5px] border-[#04DA8D]
-            rounded-full
-            gap-1
-            font-medium text-center
-            
-            text-[14px] sm:text-[16px] lg:text-[18px]
-            w-[120px] sm:w-[135px] lg:w-[150px]
-            h-[36px] sm:h-[40px] lg:h-[43px]
-          "
-        >
-          See More
-          <span className="ml-2">→</span>
-        </button>
+            >
+              Trends in Trust
+            </h1>
+            <button
+              className=" flex items-center justify-center border-[1.5px] border-[#04DA8D] rounded-full  gap-1 font-medium text-center text-[14px] sm:text-[16px] lg:text-[18px] w-[120px] sm:w-[135px] lg:w-[150px] h-[36px] sm:h-[40px] lg:h-[43px]">
+              See More
+              <span className="ml-2">→</span>
+            </button>
           </div>
 
           <div className="  grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-6.25 items-stretch">
             <div className="bg-[#EFF3F7] rounded-[24px] p-[12px] sm:p-[14px] lg:p-[15px] ">
-          <div className="relative w-full aspect-[556/290] rounded-[16px] overflow-hidden">
-  <Image
-    src="/images/bs2.svg"
-    alt="Main blog"
-    fill
-    className="object-cover"
-  />
-</div>
+              <div className="relative w-full aspect-[556/290] rounded-[16px] overflow-hidden">
+                <Image
+                  src="/images/bs2.svg"
+                  alt="Main blog"
+                  fill
+                  className="object-cover"
+                />
+              </div>
 
               <div className="pt-4  ">
-        <div className="inline-flex items-center justify-center h-[34px] px-4 rounded-full border border-[#17253F26] bg-white text-[#17253F] text-[16px] font-normal  text-center capitalize mb-4.5">
-  Trends In Trust
-</div>
+                <div className="inline-flex items-center justify-center h-[34px] px-4 rounded-full border border-[#17253F26] bg-white text-[#17253F] text-[16px] font-normal  text-center capitalize mb-4.5">
+                  Trends In Trust
+                </div>
 
                 <h4 className="text-[#17253F] font-semibold text-[18px] sm:text-[24px] leading-[1.25] mb-2.5">
                   Quarterly bug fixes and feature releases
@@ -128,9 +115,12 @@ export default function BolgSection1() {
                       {item.desc}
                     </p>
 
-                  <Link href="/blog/blog-details" className="text-[#17253F] mb-5 md:mb-0 font-semibold text-[16px] leading-[1.2] flex items-center gap-2">
-                    Read Article <span>→</span>
-                  </Link>
+                    <Link
+                      href="/blog/blog-details"
+                      className="text-[#17253F] mb-5 md:mb-0 font-semibold text-[16px] leading-[1.2] flex items-center gap-2"
+                    >
+                      Read Article <span>→</span>
+                    </Link>
                   </div>
                 </div>
               ))}

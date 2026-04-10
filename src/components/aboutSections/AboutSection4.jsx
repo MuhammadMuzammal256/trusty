@@ -45,7 +45,7 @@ export default function AboutSection4() {
   const [openFaq, setOpenFaq] = useState(-1);
 
   return (
-    <section className="w-full px-6 py-16 md:px-35 md:py-20">
+    <section className="w-full px-10 py-16 md:py-20">
       <div className="mx-auto w-full max-w-7xl">
         <h2 className="font-poppins font-semibold lg:text-[38px] md:text-[38px] leading-tight tracking-normal text-center text-[#17253F] sm:text-[1.65rem]">
           Frequently Asked Questions

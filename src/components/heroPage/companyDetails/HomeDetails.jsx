@@ -171,13 +171,14 @@ export default function HomeDetails() {
               </div>
             </div>
 
-            <div className="mt-3 space-y-3">
+          
   {reviews.map((review) => (
     <Link
       key={review.id}
       href="/heropage/company-details/review-page"
     >
-      <article className="rounded-[14px] border border-[#E7ECF2] bg-[#F3F6F8] px-4 py-4 cursor-pointer hover:shadow-md transition">
+    <div className="mt-5 ">
+        <article className="rounded-[14px] border border-[#E7ECF2] bg-[#F3F6F8] px-4 py-4 cursor-pointer hover:shadow-md transition">
         <div className="flex items-start justify-between gap-3">
           <div className="flex gap-3 items-start justify-start">
             <div className="h-10 w-10 overflow-hidden rounded-full">
@@ -261,9 +262,10 @@ export default function HomeDetails() {
           </div>
         </div>
       </article>
+    </div>
     </Link>
   ))}
-</div>
+
 
 <div className="mt-5 flex flex-wrap items-center justify-center gap-3 text-[14px]">
   <button className="w-8 h-8 flex items-center justify-center text-[#98A2B3]">

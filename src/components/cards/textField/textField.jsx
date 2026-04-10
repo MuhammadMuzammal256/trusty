@@ -37,13 +37,13 @@ export default function TextField() {
         <div
           onClick={() => setOpen(!open)}
           className="flex items-center gap-2 cursor-pointer pl-3 sm:pl-5 md:pl-6 lg:pl-7.5 py-3 sm:py-4 md:py-5">
-          <img src="images/4x4.svg" alt="drop" className="w-4 sm:w-5" />
+          <img src="/images/4x4.svg" alt="drop" className="w-4 sm:w-5" />
 
           <span className="text-[#17253F]text-[12px] sm:text-[14px] md:text-[15px] lg:text-[16px]">
             {selectedCategory}
           </span>
 
-          <img src="images/dropdown.svg" alt="drop" className="w-3 sm:w-4" />
+          <img src="/images/dropdown.svg" alt="drop" className="w-3 sm:w-4" />
 
           <img
             src="/images/Line.svg"
