@@ -1,9 +1,42 @@
+"use client";
+import { useState } from "react";
 import TextField from "../cards/textField/textField";
 import Footer from "../Footer/Footer";
 import OwnBusiness from "../heroPage/ownBusiness";
 import BusinessCard from "./businessCard";
 
 export default function LoginPage() {
+   const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  const validateEmail = (value) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(value);
+  };
+
+  const handleSubmit = () => {
+    if (!email) {
+      setError("Email is required");
+    } else if (!validateEmail(email)) {
+      setError("Enter a valid email");
+    } else {
+      setError("");
+   
+  
+    localStorage.setItem("userEmail", email);
+
+
+    const savedEmail = localStorage.getItem("userEmail");
+
+
+    if (savedEmail) {
+      setEmail(savedEmail);
+    }
+
+    console.log( savedEmail);
+  }
+    
+  };
   return (
     <div>
     <div className="bg-[url('/images/Hero-bg.svg')] bg-cover bg-start pb-5 pt-20 sm:pb-[70px] lg:pb-15">
@@ -50,10 +83,8 @@ Log In Now
 
     <div className="flex items-center justify-center gap-4 sm:gap-6 mb-10 flex-wrap">
       <div
-        className="flex items-center justify-center
-        w-[120px] h-[60px]
-        md:w-[150px] md:h-[78px]
-        rounded-2xl bg-white shadow-sm"
+        className="flex items-center justify-center w-[120px] h-[60px] md:w-[150px] md:h-[78px] rounded-2xl bg-white shadow-s  hover:cursor-pointer  "
+        
       >
         <img
           src="/images/google.svg"
@@ -63,11 +94,7 @@ Log In Now
       </div>
 
       <div
-        className="flex items-center justify-center
-        w-[120px] h-[60px]
-        md:w-[150px] md:h-[78px]
-        rounded-2xl bg-[#1877F2] shadow-sm"
-      >
+        className="flex items-center justify-center w-[120px] h-[60px]     md:w-[150px] md:h-[78px]  hover:cursor-pointer rounded-2xl bg-[#1877F2] shadow-sm" >
         <img
           src="/images/facebook.svg"
           alt="facebook"
@@ -76,11 +103,7 @@ Log In Now
       </div>
 
       <div
-        className="flex items-center justify-center
-        w-[120px] h-[60px]
-        md:w-[150px] md:h-[78px]
-        rounded-2xl bg-black shadow-sm"
-      >
+        className="flex items-center justify-center w-[120px] h-[60px] hover:cursor-pointer md:w-[150px] md:h-[78px] rounded-2xl bg-black shadow-sm" >
         <img
           src="/images/apple.svg"
           alt="apple"
@@ -95,6 +118,7 @@ Log In Now
       <span className="px-4 text-[#17253F] text-[16px] font-normal text-center">
         OR
       </span>
+    
 
       <div className="flex-1 h-px bg-[#D9DEE5]" />
     </div>
@@ -106,12 +130,25 @@ Log In Now
 
       <input
         type="text"
+        value={email}
+        onChange={(e) => {
+          setEmail(e.target.value);
+          setError("");
+        }}
         placeholder="name@gmail.com"
         className="w-full h-[64px] rounded-full border border-[#D6DDE5] bg-white px-[28px] text-[16px] text-[#1D2746] placeholder:text-[#A3ACB9] outline-none"
       />
+          {error && (
+        <p className="text-red-500 text-sm mt-2 px-2">
+          {error}
+        </p>
+      )}
     </div>
 
-    <button className="w-full h-[70px] rounded-full bg-[#17253F] text-white text-[17px] font-semibold flex items-center justify-center gap-3">
+   <button
+      onClick={handleSubmit}
+      className="w-full h-[70px] rounded-full bg-[#17253F] text-white text-[17px] font-semibold flex items-center justify-center gap-3"
+    >
       Continue with email
       <span className="text-[24px] leading-none">→</span>
     </button>
