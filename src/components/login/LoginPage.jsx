@@ -21,7 +21,7 @@ export default function LoginPage() {
       setError("Enter a valid email");
     } else {
       setError("");
-   
+ 
   
     localStorage.setItem("userEmail", email);
 
@@ -35,7 +35,7 @@ export default function LoginPage() {
 
     console.log( savedEmail);
   }
-    
+      setEmail("");
   };
   return (
     <div>
