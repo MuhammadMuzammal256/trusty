@@ -16,7 +16,7 @@ export default function MarqueTag() {
   return (
     <div className="w-full">
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 flex items-start justify-between flex-wrap gap-4 mb-8">
+      <div className="max-w-7xl mx-auto px-10 flex items-start justify-between flex-wrap gap-4 mb-8">
         <h1
           className=" font-semibold  text-[22px] sm:text-[26px] md:text-[32px] lg:text-[38px] max-w-[260px] sm:max-w-[300px] md:max-w-[360px] lg:max-w-full" >
           What you are looking for?

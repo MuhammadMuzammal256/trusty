@@ -4,6 +4,7 @@ import TextField from "@/components/cards/textField/textField";
 import CategoryCard from "./categoryCard";
 import AboutSection5 from "@/components/aboutSections/AboutSection5";
 import Footer from "@/components/Footer/Footer";
+import Link from "next/link";
 
 export default function CategorySection1() {
   return (
@@ -27,11 +28,18 @@ export default function CategorySection1() {
                 What you are looking for?
               </h1>
 
-              <button
-                className="flex items-center justify-center border-[1.5px] border-[#04DA8D] rounded-full gap-1 font-medium text-center  text-[14px] sm:text-[16px] lg:text-[18px] w-[120px] sm:w-[135px] lg:w-[150px] h-[36px] sm:h-[40px] lg:h-[43px] cursor-pointer" >
-                See More
-                <span className="ml-2">→</span>
-              </button>
+    
+
+<Link 
+     href="/heropage/category/single-category"
+>
+  <button
+    className="flex items-center justify-center border-[1.5px] border-[#04DA8D] rounded-full gap-1 font-medium text-center text-[14px] sm:text-[16px] lg:text-[18px] w-[120px] sm:w-[135px] lg:w-[150px] h-[36px] sm:h-[40px] lg:h-[43px] cursor-pointer"
+  >
+    See More
+    <span className="ml-2">→</span>
+  </button>
+</Link>
             </div>
           </div>
         </div>
