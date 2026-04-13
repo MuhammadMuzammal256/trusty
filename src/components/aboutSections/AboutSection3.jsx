@@ -73,7 +73,7 @@ export default function AboutSection3() {
 
                     <div className="relative mt-4 rounded-2xl bg-white p-6 shadow-sm">
                       <span >
-                        <img src="/Images/up.svg" alt="" />
+                        <img src="/images/up.svg" alt="" />
                       </span>
 
                       <p className="relative z-1 pt-6 text-[#17253F]  font-normal text-[14px] leading-[178%]">
@@ -81,7 +81,7 @@ export default function AboutSection3() {
                       </p>
 
                       <span className="absolute bottom-5 right-9 text-3xl font-serif text-[#04DA8D]">
-                        <img src="/Images/down.svg" alt="" />
+                        <img src="/images/down.svg" alt="" />
                       </span>
                     </div>
                   </div>
@@ -109,7 +109,7 @@ export default function AboutSection3() {
 
                     <div className="relative mt-4 rounded-2xl bg-white p-6 shadow-sm">
                         <span >
-                        <img src="/Images/up.svg" alt="" />
+                        <img src="/images/up.svg" alt="" />
                       </span>
 
                       <p className="relative z-1 pt-6 text-[#17253F]  font-normal text-[14px] leading-[178%]">
@@ -117,7 +117,7 @@ export default function AboutSection3() {
                       </p>
 
                       <span className="absolute bottom-5 right-9 text-3xl font-serif text-[#04DA8D]">
-                        <img src="/Images/down.svg" alt="" />
+                        <img src="/images/down.svg" alt="" />
                       </span>
                     </div>
                   </div>
