@@ -67,7 +67,7 @@ export default function AboutSection3() {
                       </span>
 
                       <span className="ml-auto flex items-center gap-1 text-sm text-[#17253F]">
-                        5/5 <span className="w-6" ><img src="/Images/lightStar.svg" alt="" /></span>
+                        5/5 <span className="w-6" ><img src="/images/lightStar.svg" alt="" /></span>
                       </span>
                     </div>
 
@@ -103,7 +103,7 @@ export default function AboutSection3() {
                       </span>
 
                       <span className="ml-auto flex items-center gap-1 text-sm text-[#17253F]">
-                        5/5 <span className="w-6" ><img src="/Images/lightStar.svg" alt="" /></span>
+                        5/5 <span className="w-6" ><img src="/images/lightStar.svg" alt="" /></span>
                       </span>
                     </div>
 
